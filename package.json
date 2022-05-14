@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "aws s3 sync ./out s3://travel-with-pet --profile=UNNEW"
   },
   "dependencies": {
     "@toast-ui/react-editor": "^3.1.3",
