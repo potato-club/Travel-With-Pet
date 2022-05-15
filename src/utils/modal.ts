@@ -14,7 +14,7 @@ export const noBtn = (text: string, fn?: Fn): void => {
     confirmButtonColor: customColor.brownDark,
     timer: 1500,
   });
-  fn && fn();
+  fn?.();
 };
 
 export const twoBtn = (text: string, fn?: any): void => {
@@ -27,7 +27,7 @@ export const twoBtn = (text: string, fn?: any): void => {
   }).then(result => {
     if (result.isConfirmed) {
       noBtn('완료되었습니다.');
-      fn && fn();
+      fn?.();
     }
   });
 };

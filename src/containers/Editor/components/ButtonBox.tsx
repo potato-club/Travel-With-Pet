@@ -31,9 +31,9 @@ export function ButtonBox() {
         width={120}
         backGroundColor={customColor.gray}
         color={customColor.black}
-        onClick={() => clickCancel()}
+        onClick={clickCancel}
       />
-      <CustomButton text="등록" width={120} onClick={() => clickAdd()} />
+      <CustomButton text="등록" width={120} onClick={clickAdd} />
     </Wrapper>
   );
 }
