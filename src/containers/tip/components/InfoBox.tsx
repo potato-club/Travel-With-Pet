@@ -2,93 +2,45 @@ import React from 'react';
 import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import styled from 'styled-components';
-import { MdOutlinePets, MdWaterDrop } from 'react-icons/md';
-export function InfoBox() {
+import { TipDataType } from './tipData';
+
+export function InfoBox(props:TipDataType) {
+  console.log(props.titleIcon);
   return (
     <Container>
       <TitleWrapper>
         <TypoGraphy type="Title" fontWeight="bold">
-          가벼운 나들이
+          {props.title}
         </TypoGraphy>
-        <MdOutlinePets size={100} />
+        <IconWrapper style={{fontSize:'100px'}}>{props.titleIcon && React.createElement(props.titleIcon)}</IconWrapper>
       </TitleWrapper>
       <InfoContainer>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
-        <InfoWrapper>
-          <IconWrapper>
-            <MdWaterDrop size={24} />
-          </IconWrapper>
-          <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-          <TypoGraphy type="body1" color={customColor.gray}>
-            목 말라요
-          </TypoGraphy>
-        </InfoWrapper>
+        {props.information.map((data, index) => (
+          <InfoWrapper key={index}>
+            {console.log(data)}
+            <IconWrapper>
+              {data.infoIcon && React.createElement(data.infoIcon)}
+            </IconWrapper>
+            <TypoGraphy type="h3">{data.infoTitle}</TypoGraphy>
+            <TypoGraphy type="body1" color={customColor.gray}>
+              {data.infoSub}
+            </TypoGraphy>
+          </InfoWrapper>
+        ))}
       </InfoContainer>
     </Container>
   );
 }
+
+{/* <InfoWrapper>
+  <IconWrapper>
+    {React.createElement(props.information[0].infoIcon)}
+  </IconWrapper>
+  <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
+  <TypoGraphy type="body1" color={customColor.gray}>
+    목 말라요
+  </TypoGraphy>
+</InfoWrapper>; */}
 
 const Container = styled.div`
   display: flex;
@@ -124,4 +76,6 @@ const InfoWrapper = styled.div`
 `;
 
 
-const IconWrapper = styled.div``;
+const IconWrapper = styled.div`
+  font-size: 24px;
+`;

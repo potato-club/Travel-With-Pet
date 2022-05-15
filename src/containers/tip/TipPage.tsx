@@ -3,6 +3,8 @@ import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import styled from "styled-components";
 import { InfoBox } from './components/InfoBox';
+import { travelTip, walkTip } from './components/tipData';
+
 export function TipPage() {
   return (
     <Container>
@@ -29,21 +31,25 @@ export function TipPage() {
           <TextWrapper>
             <TypoGraphy type="h1" fontWeight="bold">
               반려동물과 외출 시 챙겨야할
-              <span style={{ color: `${customColor.brownDark}` }}>준비물</span>
+              <span style={{ color: `${customColor.brownDark}` }}> 준비물</span>
               을 알아볼까요?
             </TypoGraphy>
           </TextWrapper>
           <InFoBoxContainer>
-            <InfoBox />
-            <InfoBox />
-            <InfoBox />
-            <InfoBox />
+            <InfoBox {...walkTip} />
+            <InfoBox {...travelTip} />
           </InFoBoxContainer>
         </Contents>
       </Wrapper>
     </Container>
   );
 }
+
+type InformationType = {
+  infoIcon?: any;
+  infoTitle: string;
+  infoSub: string;
+};
 
 const Container = styled.div`
   width: 100%;
