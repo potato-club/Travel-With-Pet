@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { TipDataType } from './tipData';
 
 export function InfoBox(props:TipDataType) {
-  console.log(props.titleIcon);
   return (
     <Container>
       <TitleWrapper>
@@ -17,7 +16,6 @@ export function InfoBox(props:TipDataType) {
       <InfoContainer>
         {props.information.map((data, index) => (
           <InfoWrapper key={index}>
-            {console.log(data)}
             <IconWrapper>
               {data.infoIcon && React.createElement(data.infoIcon)}
             </IconWrapper>
@@ -32,15 +30,6 @@ export function InfoBox(props:TipDataType) {
   );
 }
 
-{/* <InfoWrapper>
-  <IconWrapper>
-    {React.createElement(props.information[0].infoIcon)}
-  </IconWrapper>
-  <TypoGraphy type="h3">물과 물그릇</TypoGraphy>
-  <TypoGraphy type="body1" color={customColor.gray}>
-    목 말라요
-  </TypoGraphy>
-</InfoWrapper>; */}
 
 const Container = styled.div`
   display: flex;
