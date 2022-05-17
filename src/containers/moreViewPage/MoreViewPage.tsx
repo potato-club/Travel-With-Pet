@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FixedButton,
   Notice,
@@ -8,17 +8,17 @@ import {
   TypoGraphy,
 } from 'src/components';
 import { CustomPagination } from 'src/components/CustomPagination';
-import { PhotoCardInfoType } from 'src/constants/photoCard.type';
-import { photoCardInfo, totalItemsCount } from 'src/dummy/photoCardInfo';
 import styled from 'styled-components';
+import { InformationBoardType } from "src/types/board.type";
+import { InformationBoard } from 'src/dummy/photoCardInfo';
 export function MoreViewPage() {
   const router = useRouter();
   const [activePage, setActivePage] = useState<number>(1);
 
   // 이 부분은 나중에 api 호출로 바뀔거같음 (지금은 UI 구성을 위해 임시로 짜놓은 코드 )
-  const photoCardInfoPiece: PhotoCardInfoType[] = [];
+  const photoCardInfoPiece: InformationBoardType[] = [];
   const pieceNumber = 16;
-  photoCardInfo.map((data, index) => {
+  InformationBoard.map((data, index) => {
     if (
       index < (activePage - 1) * pieceNumber ||
       index > activePage * pieceNumber - 1
@@ -39,6 +39,14 @@ export function MoreViewPage() {
         return '기타';
     }
   };
+
+  const categoryData: InformationBoardType[] = [];
+  const dataCollect = () => {
+    for (let i = 0; i < InformationBoard.length; ++i) {
+      InformationBoard[i].category === category() && categoryData.push(InformationBoard[i]);
+    }
+  };
+  dataCollect();
   return (
     <Container>
       <Search />
@@ -53,7 +61,7 @@ export function MoreViewPage() {
       <CustomPagination
         activePage={activePage}
         itemsCountPerPage={pieceNumber}
-        totalItemsCount={totalItemsCount}
+        totalItemsCount={InformationBoard.length}
         onChange={e => setActivePage(e)}
       />
     </Container>
