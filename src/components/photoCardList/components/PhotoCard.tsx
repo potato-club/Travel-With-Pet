@@ -38,7 +38,6 @@ export const PhotoCard = ({ data }: Props) => {
     // ! contents 에서 사진URL이랑 내용을 분리해와야함.
     const imageUrl = '/DummyThumbnail.png';
     const text = '사진url, 내용은 정적으로 넣은거. 나중에 분리해야함';
-    const dummyTags = ['#이거도','#일단', '#임의값'];
   return (
     <Container>
       <Link href={`/information/detail/${_id}`}>
@@ -53,7 +52,7 @@ export const PhotoCard = ({ data }: Props) => {
           />
         </a>
       </Link>
-      <Tag Tags={dummyTags} />
+      <Tag Tags={tags} />
     </Container>
   );
 };
