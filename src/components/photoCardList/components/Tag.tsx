@@ -6,14 +6,13 @@ type Props = {
 };
 export function Tag({ Tags }: Props) {
   const tagsArray = Tags?.split('#');
-  console.log(tagsArray);
   return (
     <TagContainer>
       {tagsArray?.map((tag, index) => {
         if (index === 0) return; // split('#') 를 사용해서 0번째 인덱스는 공백 '' 이 나옴.
         return (
           <TypoGraphy type="body2" key={index}>
-            <TagWrapper>{tag}</TagWrapper>
+            <TagWrapper>#{tag}</TagWrapper>
           </TypoGraphy>
         );
       })}
