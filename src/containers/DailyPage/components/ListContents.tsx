@@ -45,7 +45,7 @@ export default function ListContents() {
                     </a>
                   </Link>
                   <TagWrapper>
-                    {<Tag Tags={data.tags} />}
+                    <Tag Tags={data.tags} />
                   </TagWrapper>
                 </TitleContainer>
               </LeftWrapper>
