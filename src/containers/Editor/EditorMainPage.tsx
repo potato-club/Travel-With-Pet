@@ -57,7 +57,7 @@ export const EditorMainPage: React.FC = () => {
           setSelectedCity={setSelectedCity}
         />
       ) : (
-        <Input placeholder="제목을 입력하세요" />
+        <Input placeholder="제목을 입력하세요 " />
       )}
       <Hr />
       <Input placeholder="#태그 #입력 #인천" />
