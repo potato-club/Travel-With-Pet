@@ -2,3 +2,4 @@
 export { category } from '../constants/category';
 export { city } from '../constants/city';
 export { customColor } from './customColor';
+export { setting } from './setting';
