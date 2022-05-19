@@ -1,5 +1,5 @@
-import React from 'react'
-import Pagination from 'react-js-pagination'
+import React from 'react';
+import Pagination from 'react-js-pagination';
 import { customColor } from 'src/constants';
 import styled from 'styled-components';
 import { ReactJsPaginationProps } from 'react-js-pagination';
@@ -46,7 +46,7 @@ const PaginationWrapper = styled.div`
   ul.pagination li:nth-child(-n + 2) a {
     color: ${customColor.black};
   }
-  ul.pagination li:nth-last-child(-n+2) a {
+  ul.pagination li:nth-last-child(-n + 2) a {
     color: ${customColor.black};
   }
 
