@@ -10,13 +10,13 @@ import ReactDOM from 'react-dom';
 import { ModalProvider } from 'styled-react-modal';
 
 export const Introduce = () => {
-  const [isSave, setIsSave] = useState(false);
+  const [isExit, setExit] = useState(false);
 
-  const [exit, setExit] = useState('N');
-
-  const toggleHandler = () => {
-    setIsSave(!isSave);
+  const exitHandler = () => {
+    setExit(!exit);
   };
+
+  console.log(setExit);
 
   return (
     <>
@@ -32,15 +32,16 @@ export const Introduce = () => {
           <BtnDots>
             <BiDotsVerticalRounded
               size="16px"
-              // onClick={() => {
-              //   setExit(!prev);
-              // }}
+              onClick={() => {
+                setExit(!isExit);
+              }}
             />
           </BtnDots>
         </SignUpDate>
         <BtnExit>
           <TypoGraphy type="body1" fontWeight="bold">
-            회원탈퇴
+            {/* 회원탈퇴 */}
+            {isExit ? '회원탈퇴' : '프로필 수정'}
           </TypoGraphy>
         </BtnExit>
         <WrapperInfo>
@@ -122,7 +123,6 @@ const BtnExit = styled.button`
   position: relative;
   display: flex;
   justify-content: center;
-  /* flex-direction: flex-end; */
   margin-left: 1016px;
   width: 144px;
   height: 40px;
