@@ -108,7 +108,7 @@ export const EditorMainPage: React.FC = () => {
           <Input placeholder="세부 지역을 입력하세요" />
         </>
       ) : (
-        <Input placeholder="제목을 입력하세요" />
+        <Input placeholder="제목을 입력하세요 " />
       )}
 
       <Hr />
