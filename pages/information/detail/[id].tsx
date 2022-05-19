@@ -1,33 +1,14 @@
 import type { NextPage } from 'next';
 import { InformationDetailPage } from 'src/containers/detail/InformationDetailPage';
-
+import { InformationBoard } from 'src/dummy/photoCardInfo';
 type Props = { id: number };
 
-const dummy = {
-  _id: '0',
-  title: 'title',
-  tags: 'tags',
-  category: 'category',
-  city: 'city',
-  detailCity: 'detailCity',
-
-  contents: 'contents',
-  heart: 0,
-  commentCount: 0,
-  comments: [],
-  owner: {
-    _id: '_id',
-    email: 'test@naver.com',
-    avatarUrl: 'url',
-    name: 'name',
-    __v: 0,
-  },
-  createdAt: new Date(),
-  __v: 0,
-};
-
 const InformationDetail: NextPage<Props> = ({ id }) => {
-  return <InformationDetailPage detailInfo={dummy} />;
+  const detailInfo = InformationBoard.filter(
+    data => data._id === String(id),
+  )[0];
+  console.log(InformationBoard.filter(data => data._id === String(id)));
+  return <InformationDetailPage detailInfo={detailInfo} />;
 };
 
 export async function getServerSideProps(context: { query: { id: number } }) {

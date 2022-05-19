@@ -1,9 +1,9 @@
 import * as S from './DetailPage';
 import { DetailBody, CommentList, DailyDetailHeader } from './components';
-import { dailyInfo } from 'src/dummy/daily';
-import { comments } from 'src/dummy/comments';
-import { useState } from 'react';
-import { OwnerType } from 'src/types/user.type';
+// import { dailyInfo } from 'src/dummy/daily';
+// import { comments } from 'src/dummy/comments';
+// import { useState } from 'react';
+// import { OwnerType } from 'src/types/user.type';
 import { DailyBoardType } from 'src/types/board.type';
 type Props = {
   detailInfo: DailyBoardType;
