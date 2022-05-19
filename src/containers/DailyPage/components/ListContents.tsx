@@ -10,8 +10,7 @@ import { DailyBoard } from 'src/dummy/dailyInfo';
 
 export default function ListContents() {
   const [activePage, setActivePage] = useState<number>(1);
-  const imageUrl = 'favicon.ico';
-
+  // ! imageUrl 은 나중에 contents 에서 분리해야함.
   const formatDate = (date: Date) => {
     const formattedDate = [
       date.getFullYear(),
@@ -53,7 +52,7 @@ export default function ListContents() {
               <RightWrapper>
                 <TextWrapper>
                   <TypoGraphy type="body1" fontWeight="bold">
-                    {data.ImageUrl && <AiOutlinePicture fontSize={28} />}
+                    {/* {data.ImageUrl && <AiOutlinePicture fontSize={28} />} */}
                   </TypoGraphy>
                 </TextWrapper>
                 <TextWrapper>
@@ -62,17 +61,17 @@ export default function ListContents() {
                     fontWeight="bold"
                     color={customColor.brownDark}
                   >
-                    ({data.Comment})
+                    ({data.commentCount})
                   </TypoGraphy>
                 </TextWrapper>
                 <TextWrapper>
                   <TypoGraphy type="body1" fontWeight="bold">
-                    {data.Writer}
+                    {data.owner.name}
                   </TypoGraphy>
                 </TextWrapper>
                 <TextWrapper>
                   <TypoGraphy type="body1" fontWeight="bold">
-                    {formatDate(data.Date)}
+                    {formatDate(data.createdAt)}
                   </TypoGraphy>
                 </TextWrapper>
               </RightWrapper>
@@ -82,7 +81,7 @@ export default function ListContents() {
       <CustomPagination
         activePage={activePage}
         itemsCountPerPage={10}
-        totalItemsCount={totalItemsCount}
+        totalItemsCount={DailyBoard.length}
         onChange={e => setActivePage(e)}
       />
     </Container>
