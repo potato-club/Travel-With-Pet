@@ -1,4 +1,4 @@
-import { Introduce, MyComments, MyLikes, MyPosts } from 'src/containers/mypage';
+import { Introduce, MyComments, MyPosts } from 'src/containers/mypage';
 
 export const MyPage = () => {
   return (
@@ -6,7 +6,6 @@ export const MyPage = () => {
       <Introduce />
       <MyPosts />
       <MyComments />
-      <MyLikes />
     </>
   );
 };
