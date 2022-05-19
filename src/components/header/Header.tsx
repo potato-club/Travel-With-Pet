@@ -11,30 +11,34 @@ export const Header = () => {
     <S.Container>
       <S.UpHeader>
         <Link href={'/'} passHref>
-          <S.TitleWrapper>
-            <TypoGraphy
-              type="Title"
-              color={customColor.brownDark}
-              fontWeight="bold"
-            >
-              MoengMoeng
-            </TypoGraphy>
-          </S.TitleWrapper>
+          <S.A>
+            <S.TitleWrapper>
+              <TypoGraphy
+                type="Title"
+                color={customColor.brownDark}
+                fontWeight="bold"
+              >
+                MoengMoeng
+              </TypoGraphy>
+            </S.TitleWrapper>
+          </S.A>
         </Link>
         <S.UpLeftWrapper>
           <S.WriteButtonWrapper>
             <Link href={'/editor'} passHref>
-              <CustomButton
-                text="글 작성"
-                width={100}
-                backGroundColor={customColor.orange}
-                height={35}
-              />
+              <S.A>
+                <CustomButton
+                  text="글 작성"
+                  width={100}
+                  backGroundColor={customColor.orange}
+                  height={35}
+                />
+              </S.A>
             </Link>
           </S.WriteButtonWrapper>
-          <S.AlertButtonWrapper>
+          {/* <S.AlertButtonWrapper>
             <VscBell />
-          </S.AlertButtonWrapper>
+          </S.AlertButtonWrapper> */}
         </S.UpLeftWrapper>
       </S.UpHeader>
       <S.DownHeader>
