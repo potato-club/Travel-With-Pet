@@ -11,9 +11,9 @@ export function ButtonBox() {
         width={120}
         backGroundColor={customColor.gray}
         color={customColor.black}
-        onClick={() => alert('취소')}
+        onClick={() => {}}
       />
-      <CustomButton text="등록" width={120} onClick={() => alert('취소')} />
+      <CustomButton text="등록" width={120} onClick={() => {}} />
     </Wrapper>
   );
 }
