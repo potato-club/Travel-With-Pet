@@ -38,8 +38,8 @@ const EditorForm: React.FC<TuiWithForwardedRefProps> = props => {
           try {
             const res = await ReactS3Client.uploadFile(blob, uuidv4());
             callback(res.location, 'imageURL');
-          } catch (error) {
-            console.log(error);
+          } catch (err) {
+            console.log(err);
           }
         });
     }
