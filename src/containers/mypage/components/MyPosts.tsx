@@ -9,7 +9,7 @@ export const MyPosts = () => {
   return (
     <>
       <TabsCategory children={'내가 작성한 글'} />
-      {/* <PhotoCardList type="MyPage" photoCardInfo={photoCardInfo} /> */}
+      <PhotoCardList type="MyPage" photoCardInfo={photoCardInfo} />
     </>
   );
 };

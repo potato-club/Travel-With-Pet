@@ -4,10 +4,6 @@ import { customColor } from 'src/constants';
 import { useState } from 'react';
 
 export const TabsCategory = ({ children }) => {
-  // type ToggleProps = {
-  //   selected?: string;
-  // };
-
   const [tab, setTab] = useState('A');
 
   return (
@@ -51,7 +47,6 @@ export const TabsCategory = ({ children }) => {
 const Hr = styled.hr`
   margin-top: 80px;
   width: 1178px;
-  background-color: #c4c4c4;
 `;
 
 const Title = styled.div`

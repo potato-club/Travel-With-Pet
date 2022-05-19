@@ -204,7 +204,9 @@ const Input = styled.input`
   width: 50%;
 `;
 
-const Item = styled.div<ItemProps>`
+const Item = styled.div<{
+  selected: boolean;
+}>`
   cursor: pointer;
 
   &:hover div {

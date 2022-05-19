@@ -9,9 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <LayoutContainer>
       <Header />
-      {/* <Component {...pageProps} /> */}
-      <MyPage />
-      <Footer />
+      <Component {...pageProps} />
     </LayoutContainer>
   );
 }

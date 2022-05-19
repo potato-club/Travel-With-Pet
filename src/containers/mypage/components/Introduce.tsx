@@ -5,9 +5,14 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { customColor } from 'src/constants';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import { ModalProvider } from 'styled-react-modal';
 
 export const Introduce = () => {
   const [isSave, setIsSave] = useState(false);
+
+  const [exit, setExit] = useState('N');
 
   const toggleHandler = () => {
     setIsSave(!isSave);
@@ -15,7 +20,7 @@ export const Introduce = () => {
 
   return (
     <>
-      <ContainerInfo2>
+      <Div>
         <MyPageText>
           <TypoGraphy type={'Head'} fontWeight={'bold'} textAlign={'center'}>
             마이페이지
@@ -25,64 +30,64 @@ export const Introduce = () => {
         <SignUpDate>
           <TypoGraphy>가입일자 : 2022. 03. 25 </TypoGraphy>
           <BtnDots>
-            <BiDotsVerticalRounded size="16px" />
+            <BiDotsVerticalRounded
+              size="16px"
+              // onClick={() => {
+              //   setExit(!prev);
+              // }}
+            />
           </BtnDots>
         </SignUpDate>
-
-        <ContainerInfo>
-          {/* <input
+        <BtnExit>
+          <TypoGraphy type="body1" fontWeight="bold">
+            회원탈퇴
+          </TypoGraphy>
+        </BtnExit>
+        <WrapperInfo>
+          <Div>
+            <img src="" alt="" />
+          </Div>
+          <label htmlFor="name">
+            <BsPersonCircle size="200px" color="skyblue" />
+          </label>
+          <input
             type="file"
-            className="imgFile"
+            id="name"
+            name="name"
             style={{ display: 'none' }}
-            // onChange={props.onChange}
-          > */}
-          <BsPersonCircle size="200px" color="skyblue" />
-          {/* </input> */}
-          <ContainerInfoDetail>
-            <NickName placeholder="양파먹는 소녀" />
-            <TextEmail>
-              <TypoGraphy>19adsfasdf@gmail.com</TypoGraphy>
-            </TextEmail>
-            <PostsWrapper>
-              <TextPosts>
-                <TypoGraphy>내가 작성한 글 수</TypoGraphy>
-                <TypoGraphy>내가 작성한 댓글 수</TypoGraphy>
-                <TypoGraphy>내가 좋아요한 글 수</TypoGraphy>
-              </TextPosts>
-              <PostsCount>
-                <TypoGraphy color={customColor.brownDark} fontWeight="bold">
-                  12
-                </TypoGraphy>
-                <TypoGraphy color={customColor.brownDark} fontWeight="bold">
-                  12
-                </TypoGraphy>
-                <TypoGraphy color={customColor.brownDark} fontWeight="bold">
-                  12
-                </TypoGraphy>
-              </PostsCount>
-            </PostsWrapper>
-          </ContainerInfoDetail>
-        </ContainerInfo>
-
-        <TextIntroduce placeholder="자기소개를 입력해주세요" />
-        <Btns>
-          <BtnSave
-            onClick={toggleHandler}
-            style={
-              isSave
-                ? { backgroundColor: customColor.brown }
-                : { backgroundColor: customColor.brownDark }
-            }
-          >
-            <TypoGraphy color="white" fontWeight="bold">
-              {isSave ? '프로필 저장' : '프로필 수정'}
+            // onChange={imgHandler}
+          ></input>
+          <NickName>
+            <TypoGraphy type="h1" fontWeight="bold">
+              양파먹는 소녀
             </TypoGraphy>
-          </BtnSave>
+          </NickName>
+          <TextEmail>
+            <TypoGraphy type="h3" color={customColor.gray}>
+              19adsfasdf@gmail.com
+            </TypoGraphy>
+          </TextEmail>
+          <WrapperCounter>
+            <Counter>
+              <TypoGraphy fontWeight="bold">내가 작성한 글 수</TypoGraphy>
+              <TypoGraphy fontWeight="bold">내가 작성한 댓글 수</TypoGraphy>
+            </Counter>
+            <Counter>
+              <TypoGraphy color={customColor.brownDark} fontWeight="bold">
+                12
+              </TypoGraphy>
+              <TypoGraphy color={customColor.brownDark} fontWeight="bold">
+                12
+              </TypoGraphy>
+            </Counter>
+          </WrapperCounter>
           <BtnLogout>
-            <TypoGraphy fontWeight="bold">로그아웃</TypoGraphy>
+            <TypoGraphy type="body1" fontWeight="bold">
+              로그아웃
+            </TypoGraphy>
           </BtnLogout>
-        </Btns>
-      </ContainerInfo2>
+        </WrapperInfo>
+      </Div>
     </>
   );
 };
@@ -96,8 +101,6 @@ const MyPageText = styled.div`
 
 const Hr = styled.hr`
   width: 1178px;
-  height: 1px;
-  background-color: #c4c4c4;
   margin-bottom: 8px;
 `;
 
@@ -110,85 +113,68 @@ const SignUpDate = styled.div`
 
 const BtnDots = styled.button`
   border: 0px;
-  background-color: white;
+  background-color: ${customColor.white};
+  cursor: pointer;
+  &: hover;
 `;
 
-const ContainerInfo = styled.div`
+const BtnExit = styled.button`
+  position: relative;
   display: flex;
-  padding-left: 184px;
-  padding-top: 40px;
-`;
-
-const ContainerInfoDetail = styled.div`
-  padding: 16px;
-  padding-left: 56px;
-`;
-
-const NickName = styled.input`
-  border: 2px solid;
-  width: 400px;
-  padding: 10px;
-  color: #c4c4c4;
+  justify-content: center;
+  /* flex-direction: flex-end; */
+  margin-left: 1016px;
+  width: 144px;
+  height: 40px;
+  background-color: ${customColor.white};
+  border-color: ${customColor.brownDark};
+  border-width: 1px;
   border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+`;
+
+const WrapperInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const NickName = styled.div`
+  margin-top: 24px;
 `;
 
 const TextEmail = styled.div`
-  padding: 8px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 `;
 
-const PostsWrapper = styled.div`
+const WrapperCounter = styled.div`
+  margin-top: 24px;
   display: flex;
   justify-content: column;
   gap: 40px;
 `;
-const TextPosts = styled.div`
-  margin-inline: 8px;
-`;
 
-const PostsCount = styled.div`
-  padding-left: 8px;
-`;
-
-const TextIntroduce = styled.input`
-  height: 160px;
-  width: 1178px;
-  border: 1px solid;
-  border-radius: 16px;
-  /* margin-inline: 160px; */
-  margin-top: 40px;
-  /* padding: 16px; */
-  color: #c4c4c4;
-`;
-
-const Btns = styled.div`
+const Counter = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 40px;
-`;
-
-const BtnSave = styled.button`
-  width: 160px;
-  height: 40px;
-  margin: 8px;
-  border-color: #7d5a50;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
 `;
 
 const BtnLogout = styled.button`
-  width: 160px;
-  height: 40px;
-  margin: 8px;
-  background-color: white;
-  border-color: #7d5a50;
-  border-radius: 8px;
   display: flex;
   justify-content: center;
+  margin-top: 32px;
+  width: 144px;
+  height: 40px;
+  background-color: ${customColor.white};
+  border-color: ${customColor.brownDark};
+  border-width: 1px;
+  border-radius: 8px;
   align-items: center;
+  cursor: pointer;
 `;
 
-const ContainerInfo2 = styled.div``;
+const Div = styled.div``;
