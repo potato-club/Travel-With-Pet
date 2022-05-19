@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { TypoGraphy } from 'src/components';
 import styled from 'styled-components';
-import { dailyListInfo, totalItemsCount } from 'src/dummy/dailyInfo';
 import { AiOutlinePicture } from 'react-icons/ai';
 import { customColor } from 'src/constants';
 import { Tag } from './Tag';
 import { CustomPagination } from 'src/components/CustomPagination';
 import Link from 'next/link';
+import { DailyBoard } from 'src/dummy/dailyInfo';
 
 export default function ListContents() {
   const [activePage, setActivePage] = useState<number>(1);
+  const imageUrl = 'favicon.ico';
 
   const formatDate = (date: Date) => {
     const formattedDate = [
@@ -21,29 +22,31 @@ export default function ListContents() {
   };
   return (
     <Container>
-      {dailyListInfo.map((data, index) => {
+      {DailyBoard.map((data, index) => {
         // 이 부분은 나중에 api 호출로 바뀔거같음 (지금은 UI 구성을 위해 임시로 짜놓은 코드)
         if (index < activePage * 10 && index >= (activePage - 1) * 10)
           return (
-            <ListWrapper key={data.id}>
+            <ListWrapper key={data._id}>
               <LeftWrapper>
+                {/* 우선, 좋아요가 아닌 넘버값으로 사용할 예정 */}
                 <HeartWrapper>
                   <TypoGraphy type="body1" fontWeight="bold">
-                    {data.Like}
+                    {index + 1}
+                    {/* {data.Like} */}
                   </TypoGraphy>
                 </HeartWrapper>
                 <TitleContainer>
-                  <Link href={`/daily/detail/${data.id}`}>
+                  <Link href={`/daily/detail/${data._id}`}>
                     <a style={{ textDecoration: 'none' }}>
                       <TitleWrapper>
                         <TypoGraphy type="body1" fontWeight="bold">
-                          {data.Title}
+                          {data.title}
                         </TypoGraphy>
                       </TitleWrapper>
                     </a>
                   </Link>
                   <TagWrapper>
-                    <Tag Tags={data.Tags} />
+                    <Tag Tags={data.tags} />
                   </TagWrapper>
                 </TitleContainer>
               </LeftWrapper>
