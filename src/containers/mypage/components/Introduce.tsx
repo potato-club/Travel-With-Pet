@@ -12,12 +12,6 @@ import { ModalProvider } from 'styled-react-modal';
 export const Introduce = () => {
   const [isExit, setExit] = useState(false);
 
-  const exitHandler = () => {
-    setExit(!exit);
-  };
-
-  console.log(setExit);
-
   return (
     <>
       <Div>
@@ -38,12 +32,19 @@ export const Introduce = () => {
             />
           </BtnDots>
         </SignUpDate>
-        <BtnExit>
-          <TypoGraphy type="body1" fontWeight="bold">
-            {/* 회원탈퇴 */}
-            {isExit ? '회원탈퇴' : '프로필 수정'}
-          </TypoGraphy>
-        </BtnExit>
+        {isExit ? (
+          <BtnExitWrapper>
+            <BtnExit>
+              <TypoGraphy type="body1" fontWeight="bold">
+                회원탈퇴
+              </TypoGraphy>
+            </BtnExit>
+          </BtnExitWrapper>
+        ) : (
+          <DivEmptyWrapper>
+            <DivEmpty />
+          </DivEmptyWrapper>
+        )}
         <WrapperInfo>
           <Div>
             <img src="" alt="" />
@@ -55,12 +56,12 @@ export const Introduce = () => {
             type="file"
             id="name"
             name="name"
-            style={{ display: 'none' }}
+            style={{}}
             // onChange={imgHandler}
           ></input>
           <NickName>
             <TypoGraphy type="h1" fontWeight="bold">
-              양파먹는 소녀
+              양파먹는 소녀{Number(isExit)}
             </TypoGraphy>
           </NickName>
           <TextEmail>
@@ -116,14 +117,37 @@ const BtnDots = styled.button`
   border: 0px;
   background-color: ${customColor.white};
   cursor: pointer;
-  &: hover;
+`;
+
+const DivEmpty = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 144px;
+  height: 40px;
+  border-width: 1px;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+`;
+
+const DivEmptyWrapper = styled.div`
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+`;
+
+const BtnExitWrapper = styled.div`
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
 `;
 
 const BtnExit = styled.button`
-  position: relative;
   display: flex;
   justify-content: center;
-  margin-left: 1016px;
   width: 144px;
   height: 40px;
   background-color: ${customColor.white};
@@ -132,6 +156,7 @@ const BtnExit = styled.button`
   border-radius: 8px;
   align-items: center;
   cursor: pointer;
+  margin-left: auto;
 `;
 
 const WrapperInfo = styled.div`
@@ -177,4 +202,7 @@ const BtnLogout = styled.button`
   cursor: pointer;
 `;
 
-const Div = styled.div``;
+const Div = styled.div`
+  width: 1180px;
+  max-width: 1180px;
+`;

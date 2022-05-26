@@ -4,9 +4,8 @@ import { TypoGraphy } from '../../../components/TypoGraphy';
 import { FaHeart } from 'react-icons/fa';
 import { TabsCategory } from './TabsCategory';
 import { useState } from 'react';
-import { photoCardInfo, totalItemsCount } from 'src/dummy/photoCardInfo';
+import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { CustomPagination } from 'src/components/CustomPagination';
-
 type ItemProps = {
   selected: boolean;
 };
@@ -14,47 +13,38 @@ type ItemProps = {
 type Selected = {
   Text: string;
   Writer: string;
-  Like: number;
 };
 
 export const MyComments = () => {
   const [selectedCategory, setSelectedCategory] = useState<Selected>({
     Text: '한줄이면 이렇게 출력',
     Writer: '글쓴이닉네임',
-    Like: 23,
   });
   const [activePage, setActivePage] = useState<number>(1);
-
   return (
     <>
       {}
-      <TabsCategory children={'내가 작성한 댓글'} />
-      {photoCardInfo.map(item => (
+      <TabsCategory text={'내가 작성한 댓글'} />
+      {InformationBoard.map(item => (
         <Item
-          key={item.Writer}
+          key={item.owner.name}
           // selected={selectedCategory.Writer === item.Writer}
           onClick={() => {
-            setSelectedCategory(item);
+            // setSelectedCategory(item);
           }}
         >
           <PreviewContainer2>
             <PreviewContainer>
               <PreviewContainerPadding>
-                <FaHeart color="red" />
-                <TypoGraphy fontWeight="bold" textAlign="center">
-                  {item.Like}
-                </TypoGraphy>
-              </PreviewContainerPadding>
-              <PreviewContainerPadding>
                 <PreviewPic />
               </PreviewContainerPadding>
               <PreviewContainerPadding>
                 <TypoGraphy type="body1" fontWeight="bold">
-                  {item.Text}
+                  {/* {item.Text} */}이 텍스트는 정적으로 만든거임. 고쳐야함.
                 </TypoGraphy>
                 <PreviewContainerPadding />
                 <TypoGraphy type="body3" color="gray">
-                  {item.Writer}
+                  {item.owner.name}
                 </TypoGraphy>
               </PreviewContainerPadding>
             </PreviewContainer>
@@ -65,7 +55,7 @@ export const MyComments = () => {
       <CustomPagination
         activePage={activePage}
         itemsCountPerPage={5}
-        totalItemsCount={totalItemsCount}
+        totalItemsCount={InformationBoard.length}
         onChange={e => setActivePage(e)}
       />
     </>

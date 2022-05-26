@@ -3,22 +3,25 @@ import styled from 'styled-components';
 import { customColor } from 'src/constants';
 import { useState } from 'react';
 
-export const TabsCategory = ({ children }) => {
-  const [tab, setTab] = useState('A');
+type Props = {
+  text: string;
+};
 
+export const TabsCategory = ({ text }: Props) => {
+  const [tab, setTab] = useState('정보');
   return (
     <>
       <Hr />
       <Title>
         <TypoGraphy type="h1" fontWeight="bold">
-          {children}
+          {text}
         </TypoGraphy>
       </Title>
       <Tabs>
-        <TabA
+        <TabInfo
           selected={tab}
           onClick={() => {
-            setTab('A');
+            setTab('정보');
           }}
         >
           <TypoGraphy
@@ -28,17 +31,17 @@ export const TabsCategory = ({ children }) => {
           >
             정보
           </TypoGraphy>
-        </TabA>
-        <TabB
+        </TabInfo>
+        <TabOurs
           selected={tab}
           onClick={() => {
-            setTab('B');
+            setTab('모두의 이야기');
           }}
         >
           <TypoGraphy type="body1" fontWeight="bold">
             모두의 이야기
           </TypoGraphy>
-        </TabB>
+        </TabOurs>
       </Tabs>
     </>
   );
@@ -60,22 +63,22 @@ const Tabs = styled.div`
   align-items: center;
 `;
 
-const TabA = styled.div`
+const TabInfo = styled.div<{ selected: any }>`
   padding: 8px;
   padding-top: 0px;
   padding-bottom: 32px;
   & div {
-    color: ${props =>
-      props.selected === 'A' ? customColor.brownDark : customColor.gray};
+    color: ${({ selected }) =>
+      selected === '정보' ? customColor.brownDark : customColor.gray};
   }
 `;
 
-const TabB = styled.div`
+const TabOurs = styled.div<{ selected: any }>`
   padding: 8px;
   padding-top: 0px;
   padding-bottom: 32px;
   & div {
     color: ${props =>
-      props.selected !== 'A' ? customColor.brownDark : customColor.gray};
+      props.selected !== '정보' ? customColor.brownDark : customColor.gray};
   }
 `;
