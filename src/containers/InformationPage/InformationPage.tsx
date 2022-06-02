@@ -6,11 +6,14 @@ import styled from 'styled-components';
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 // import { photoCardInfo, totalItemsCount } from 'src/dummy/photoCardInfo';
 import { InformationBoardType } from 'src/types/board.type';
+import { useLoading } from 'hooks/useLoading.hook';
 export const InformationPage: NextPage = () => {
   const travelData: InformationBoardType[] = [];
   const shopData: InformationBoardType[] = [];
   const hotelData: InformationBoardType[] = [];
   const otherData: InformationBoardType[] = [];
+
+  const {onLoading, offLoading} = useLoading();
 
   const sliceData = (dataArray: InformationBoardType[], category: string) => {
     for (let i = 0; dataArray.length < 4; ++i) {
@@ -24,8 +27,18 @@ export const InformationPage: NextPage = () => {
     sliceData(hotelData, '숙소');
     sliceData(otherData, '기타');
 
+    const loadingTest = async() => {
+      onLoading();
+      setTimeout(()=>{
+        offLoading();
+      },2000);
+    }
+
   return (
     <Container>
+      <LoadingText onMouseEnter={() => loadingTest()}>
+        로딩 테스트 (마우스올리기)
+      </LoadingText>
       <Search />
       <Notice />
       <FixedButton />
@@ -52,4 +65,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 200px;
+`;
+
+const LoadingText = styled.div`
 `;
