@@ -38,6 +38,11 @@ export const Search = () => {
     setSearch('');
     inputRef.current!.focus();
   };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      onSearch();
+    }
+  };
   return (
     <Container>
       <Image
@@ -50,7 +55,14 @@ export const Search = () => {
       />
       <ImageGrayFilter />
       <SearchWrapper>
-        <Input value={search} onChange={onChange} ref={inputRef} />
+        <Input
+          value={search}
+          onChange={onChange}
+          onKeyDown={e => {
+            handleKeyDown(e);
+          }}
+          ref={inputRef}
+        />
         <IconWrapper>
           <AiOutlineSearch fontSize={40} onClick={onSearch} />
           <AiOutlineClose fontSize={40} onClick={onReset} />
