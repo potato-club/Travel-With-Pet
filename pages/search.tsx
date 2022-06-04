@@ -1,9 +1,10 @@
 import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import { SearchPage } from 'src/containers/search/SearchPage';
 
 const Search: NextPage = () => {
-  //로직
-  return <SearchPage />;
+  const router = useRouter();
+  return <SearchPage queryData={String(router.query.search)} />;
 };
 
 export default Search;

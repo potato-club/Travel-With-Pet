@@ -1,16 +1,34 @@
-import { useRef, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import { CustomButton, TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import styled from 'styled-components';
+import { categoryType } from '../SearchPage';
 
-type categoryType = '정보' | '일상';
 const category: categoryType[] = ['정보', '일상'];
 
-export const SearchBoxVer2 = () => {
-  const [selectedCategory, setSelectedCategory] =
-    useState<categoryType>('정보');
-
+type Props = {
+  queryData: string;
+  handleSearch: (inputData: string) => void;
+  setSelectedCategory: Dispatch<SetStateAction<categoryType>>;
+  selectedCategory: categoryType;
+};
+export const SearchBoxVer2 = ({
+  queryData,
+  handleSearch,
+  setSelectedCategory,
+  selectedCategory,
+}: Props) => {
   const inputData = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputData.current) {
+      if (queryData === 'undefined') {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        queryData = '';
+      }
+      inputData.current.value = queryData;
+    }
+  }, [queryData]);
 
   const handleCategory = (props: categoryType) => {
     setSelectedCategory(props);
@@ -18,10 +36,7 @@ export const SearchBoxVer2 = () => {
 
   const handleSearchButton = () => {
     if (inputData.current && inputData.current.value) {
-      if (selectedCategory === '일상') {
-        console.log(inputData.current.value);
-      } else if (selectedCategory === '정보') {
-      }
+      handleSearch(inputData.current.value);
     } else {
       alert('검색할 값을 입력해주세요');
     }
@@ -73,7 +88,7 @@ const Container = styled.div`
   width: 80%;
   max-width: 1178px;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 `;
 
 const BodyList = styled.div`
