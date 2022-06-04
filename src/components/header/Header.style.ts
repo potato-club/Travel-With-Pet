@@ -44,19 +44,21 @@ export const UpLeftWrapper = styled.div`
 export const WriteButtonWrapper = styled.div`
   margin-right: 20px;
 `;
-// export const AlertButtonWrapper = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: ${customColor.orange};
-//   font-size: 25px;
-//   border-radius: 50px;
-//   width: 35px;
-//   height: 35px;
-//   cursor: pointer;
-
-//   color: ${customColor.white};
-// `;
+export const TipButtonWrapper = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${customColor.orange};
+  font-size: 25px;
+  border-radius: 10px;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: ${customColor.white};
+  border: 0;
+`;
 
 export const DownHeader = styled.div`
   display: flex;
