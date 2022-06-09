@@ -2,7 +2,6 @@ import * as S from './Header.style';
 import { TypoGraphy } from '../TypoGraphy';
 import { customColor } from 'src/constants';
 import { NavItem } from './components/NavItem';
-import { VscBell } from 'react-icons/vsc';
 import Link from 'next/link';
 import { CustomButton } from '../CustomButton';
 
@@ -11,30 +10,37 @@ export const Header = () => {
     <S.Container>
       <S.UpHeader>
         <Link href={'/'} passHref>
-          <S.TitleWrapper>
-            <TypoGraphy
-              type="Title"
-              color={customColor.brownDark}
-              fontWeight="bold"
-            >
-              MoengMoeng
-            </TypoGraphy>
-          </S.TitleWrapper>
+          <S.A>
+            <S.TitleWrapper>
+              <TypoGraphy
+                type="Title"
+                color={customColor.brownDark}
+                fontWeight="bold"
+              >
+                MoengMoeng
+              </TypoGraphy>
+            </S.TitleWrapper>
+          </S.A>
         </Link>
         <S.UpLeftWrapper>
           <S.WriteButtonWrapper>
             <Link href={'/editor'} passHref>
-              <CustomButton
-                text="글 작성"
-                width={100}
-                backGroundColor={customColor.orange}
-                height={35}
-              />
+              <S.A>
+                <CustomButton
+                  text="글 작성"
+                  width={100}
+                  backGroundColor={customColor.orange}
+                  height={35}
+                />
+              </S.A>
             </Link>
           </S.WriteButtonWrapper>
-          <S.AlertButtonWrapper>
-            <VscBell />
-          </S.AlertButtonWrapper>
+
+          <Link href={'/tip'} passHref>
+            <S.A>
+              <S.TipButtonWrapper>TIP</S.TipButtonWrapper>
+            </S.A>
+          </Link>
         </S.UpLeftWrapper>
       </S.UpHeader>
       <S.DownHeader>

@@ -3,33 +3,35 @@ import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import { FaHeart } from 'react-icons/fa';
 import styled from 'styled-components';
+import { formatDate } from 'src/utils/formatDate';
 
 type Props = {
   Area: string;
-  Like: number;
+  // Like: number;
   Text: string;
   Writer: string;
-  Date: string;
+  Date: Date;
 };
 export function Info(props: Props) {
-  const { Area, Like, Text, Writer, Date } = props;
+  // const { Area, Like, Text, Writer, Date } = props;
+  const { Area, Text, Writer, Date } = props;
   return (
     <>
       <ItemWrapper>
         <TypoGraphy fontWeight="bold" color={customColor.brownDark} type="h3">
           {Area}
         </TypoGraphy>
-        <LikeWrapper>
+        {/* <LikeWrapper>
           <HeartWrapper>
             <FaHeart color="red" />
           </HeartWrapper>
           <TypoGraphy fontWeight="bold" type="body2">
             {Like}
           </TypoGraphy>
-        </LikeWrapper>
+        </LikeWrapper> */}
       </ItemWrapper>
       <ContentWrapper>
-        <TypoGraphy fontWeight="bold" fontHeight="1.2" type="body1">
+        <TypoGraphy fontWeight="bold" fontHeight='1.4em' type="body1">
           {Text}
         </TypoGraphy>
       </ContentWrapper>
@@ -38,7 +40,7 @@ export function Info(props: Props) {
           {Writer}
         </TypoGraphy>
         <TypoGraphy fontWeight="bold" color={customColor.gray} type="body3">
-          {Date}
+          {formatDate(Date)}
         </TypoGraphy>
       </ItemWrapper>
     </>
@@ -57,12 +59,11 @@ const LikeWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  max-height: 2.4em;
-  overflow: hidden;
-  min-height: 40px;
+  max-height: 2.8em;
 `;
 
 const HeartWrapper = styled.div`
