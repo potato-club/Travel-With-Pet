@@ -5,12 +5,15 @@ import { AiOutlineAlert } from 'react-icons/ai';
 import { CommentsType } from 'src/dummy/comments';
 import { Comment } from './';
 import { useState } from 'react';
+import { twoBtn } from 'src/utils/modal';
 
 type Props = {
   commentListProps: CommentsType[];
 };
 export const CommentList = ({ commentListProps }: Props) => {
-  const handleReportButton = () => {};
+  const handleReportButton = () => {
+    twoBtn('신고하시겠습니까?');
+  };
 
   return (
     <Container>

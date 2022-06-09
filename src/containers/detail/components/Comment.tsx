@@ -3,6 +3,7 @@ import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import { CommentsType } from 'src/dummy/comments';
+import { twoBtn } from 'src/utils/modal';
 import styled from 'styled-components';
 
 type Props = {
@@ -11,7 +12,9 @@ type Props = {
 
 export const Comment = ({ data }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleCommentReport = () => {};
+  const handleCommentReport = () => {
+    twoBtn('신고하시겠습니까?');
+  };
   return (
     <CommentWrapper>
       <WriterWrapper>
@@ -65,7 +68,7 @@ const WriterWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 75%;
 `;
