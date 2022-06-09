@@ -1,7 +1,7 @@
 import React from 'react';
 import { TypoGraphy } from 'src/components';
 import styled from 'styled-components';
-import { customColor } from '../../../constants/customColor';
+import { customColor } from '../../constants/customColor';
 type Props = {
   Tags?: string;
 };
@@ -11,7 +11,8 @@ export function Tag({ Tags }: Props) {
     <TagContainer>
       {tagsArray?.map((tag, index) => {
         if (index === 0) return; // split('#') 를 사용해서 0번째 인덱스는 공백 '' 이 나옴.
-        return (<TagWrapper key={index}>
+        return (
+        <TagWrapper key={index}>
           <TypoGraphy type="body3" color={customColor.brownDark}>
             {index < 5 ? tag : null}
           </TypoGraphy>

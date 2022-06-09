@@ -1,13 +1,32 @@
 import { DailyBoardType } from 'src/types/board.type';
 let unique = 1;
+let commentNumber = 1;
 export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
-    title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    title: '첫번째 게시글임',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+    commentCount: commentNumber++,
+    comments: [],
+    owner: {
+      _id: '123124',
+      email: 'email.gmail.com',
+      avatarUrl: '..',
+      name: '게시글작성자',
+      __v: unique,
+    },
+    createdAt: new Date(),
+    __v: unique++,
+  },
+  {
+    _id: String(unique),
+    title: '우선 댓글수로 페이지네이션 잘되나 확인해보자',
+    tags: '#태그#분리하기#됐나',
+    contents: '여기에 내용, 사진 같이 들어감',
+    heart: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -22,10 +41,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -40,10 +59,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -58,10 +77,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -76,10 +95,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -94,10 +113,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -112,10 +131,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -130,10 +149,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -148,10 +167,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -166,10 +185,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -184,10 +203,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -202,10 +221,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -220,10 +239,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -238,10 +257,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -256,10 +275,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -274,10 +293,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -292,10 +311,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -310,10 +329,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -328,10 +347,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -346,10 +365,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -364,10 +383,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -382,10 +401,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -400,10 +419,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -418,10 +437,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -436,10 +455,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -454,10 +473,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -472,10 +491,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -490,10 +509,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -508,10 +527,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -526,10 +545,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -544,10 +563,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -562,10 +581,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -580,10 +599,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -598,10 +617,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -616,10 +635,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -634,10 +653,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -652,10 +671,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -670,10 +689,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -688,10 +707,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -706,28 +725,10 @@ export const DailyBoard: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '타이틀',
-    tags: '#태그#나중에#분리하기',
+    tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-    commentCount: 1,
-    comments: [],
-    owner: {
-      _id: '123124',
-      email: 'email.gmail.com',
-      avatarUrl: '..',
-      name: '게시글작성자',
-      __v: unique,
-    },
-    createdAt: new Date(),
-    __v: unique++,
-  },
-  {
-    _id: String(unique),
-    title: '타이틀',
-    tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
-    heart: 1,
-    commentCount: 1,
+   commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
