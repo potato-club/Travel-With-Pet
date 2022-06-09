@@ -11,25 +11,12 @@ type Props = {
   detailInfo: DailyBoardType;
 };
 
-// const dummyData = {
-//   ...dailyInfo[0],
-//   View: 23,
-// };
 export const DailyDetailPage = ({ detailInfo }: Props) => {
-  // const [likeSelected, setLikeSelected] = useState(false);
-
   return (
     <S.Container>
-      <DailyDetailHeader
-        headerInfo={{
-          title: detailInfo.title,
-          tags: detailInfo.tags,
-          owner: detailInfo.owner.name,
-          createdAt: detailInfo.createdAt,
-        }}
-      />
+      <DailyDetailHeader detailInfo={detailInfo} />
       <DetailBody
-        contents={detailInfo['contents']}
+        detailInfo={detailInfo}
         // likeSelected={likeSelected}
         // setLikeSelected={setLikeSelected}
       />

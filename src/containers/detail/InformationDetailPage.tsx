@@ -9,23 +9,13 @@ type Props = {
 };
 
 export const InformationDetailPage = ({ detailInfo }: Props) => {
-  // const [likeSelected, setLikeSelected] = useState(false);
-
   return (
     <S.Container>
-      <InformationDetailHeader
-        headerInfo={{
-          city: detailInfo.city,
-          detailCity: detailInfo.detailCity,
-          tags: detailInfo.tags,
-          owner: detailInfo.owner.name,
-          createdAt: detailInfo.createdAt,
-        }}
-      />
+      <InformationDetailHeader detailInfo={detailInfo} />
       <DetailBody
         // likeSelected={likeSelected}
         // setLikeSelected={setLikeSelected}
-        contents={detailInfo['contents']}
+        detailInfo={detailInfo}
       />
       <CommentList commentListProps={comments} />
     </S.Container>

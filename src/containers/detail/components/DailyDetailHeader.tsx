@@ -6,35 +6,37 @@ import styled from 'styled-components';
 // import { BsPerson } from 'react-icons/bs';
 import { OwnerType } from 'src/types/user.type';
 import { formatDate } from 'src/utils/formatDate';
+import { DailyBoardType } from 'src/types/board.type';
 
 type Props = {
-  headerInfo: {
-    title: string;
-    tags: string;
-    owner: OwnerType['name'];
-    createdAt: Date;
-  };
+  // headerInfo: {
+  //   title: string;
+  //   tags: string;
+  //   owner: OwnerType['name'];
+  //   createdAt: Date;
+  // };
+  detailInfo?: DailyBoardType;
 };
-export const DailyDetailHeader = ({ headerInfo }: Props) => {
+export const DailyDetailHeader = ({ detailInfo }: Props) => {
   return (
     <Container>
       <TitleWrapper>
         <TypoGraphy type="Title" color={customColor.black} fontWeight="bold">
-          {headerInfo?.title}
+          {detailInfo?.title}
         </TypoGraphy>
       </TitleWrapper>
       <TagWrapper>
-        <Tag Tags={headerInfo.tags} />
+        <Tag Tags={detailInfo?.tags} />
       </TagWrapper>
       <InfoWrapper>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {headerInfo.owner}
+            {detailInfo?.owner}
           </TypoGraphy>
         </Info>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {formatDate(headerInfo.createdAt)}
+            {detailInfo && formatDate(detailInfo?.createdAt)}
           </TypoGraphy>
         </Info>
         {/* <Info>

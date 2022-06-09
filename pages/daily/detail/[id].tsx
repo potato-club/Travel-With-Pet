@@ -3,10 +3,10 @@ import { useRouter } from 'next/router';
 import { DailyDetailPage } from 'src/containers/detail/DailyDetailPage';
 import { DailyBoard } from 'src/dummy/dailyInfo';
 
-const DailyDetail: NextPage = () => {
+const DailyDetail = () => {
   const router = useRouter();
-  const { id } = router.query;
-  const detailInfo = DailyBoard.filter(data => data._id === String(id))[0];
+
+  const detailInfo = DailyBoard.filter(data => data._id === router.query.id)[0];
   console.log(detailInfo);
 
   return <DailyDetailPage detailInfo={detailInfo} />;

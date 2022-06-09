@@ -3,15 +3,14 @@ import { InformationDetailPage } from 'src/containers/detail/InformationDetailPa
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { useRouter } from 'next/router';
 
-const InformationDetail: NextPage = () => {
+export default function InformationDetail() {
   const router = useRouter();
-  const { id } = router.query;
   const detailInfo = InformationBoard.filter(
-    data => data._id === String(id),
+    data => data._id === String(router.query.id),
   )[0];
   console.log(detailInfo);
   return <InformationDetailPage detailInfo={detailInfo} />;
-};
+}
 
 // export async function getServerSideProps(context: { query: { id: number } }) {
 //   const { id } = context.query;
@@ -20,5 +19,3 @@ const InformationDetail: NextPage = () => {
 //   // TODO: return detail Data
 //   return { props: { id } };
 // }
-
-export default InformationDetail;

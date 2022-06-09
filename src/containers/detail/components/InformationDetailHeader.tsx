@@ -5,42 +5,36 @@ import styled from 'styled-components';
 // import { AiFillHeart } from 'react-icons/ai';
 // import { BsPerson } from 'react-icons/bs';
 import { formatDate } from 'src/utils/formatDate';
-import { OwnerType } from 'src/types/user.type';
+import { InformationBoardType } from 'src/types/board.type';
 
 type Props = {
-  headerInfo: {
-    city: string;
-    detailCity: string;
-    tags: string;
-    owner: OwnerType['name'];
-    createdAt: Date;
-  };
+  detailInfo?: InformationBoardType;
 };
-export const InformationDetailHeader = ({ headerInfo }: Props) => {
+export const InformationDetailHeader = ({ detailInfo }: Props) => {
   return (
     <Container>
       <Area>
         <TypoGraphy type="Title" color={customColor.orange} fontWeight="bold">
-          {headerInfo.city}
+          {detailInfo?.city}
         </TypoGraphy>
       </Area>
       <DetailArea>
         <TypoGraphy type="h3" color={customColor.black} fontWeight="bold">
-          {headerInfo.detailCity}
+          {detailInfo?.detailCity}
         </TypoGraphy>
       </DetailArea>
       <TagWrapper>
-        <Tag Tags={headerInfo.tags} />
+        <Tag Tags={detailInfo?.tags} />
       </TagWrapper>
       <InfoWrapper>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {headerInfo.owner}
+            {detailInfo?.owner}
           </TypoGraphy>
         </Info>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {formatDate(headerInfo.createdAt)}
+            {detailInfo && formatDate(detailInfo.createdAt)}
           </TypoGraphy>
         </Info>
         {/* <Info>

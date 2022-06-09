@@ -1,21 +1,23 @@
 // import { customColor } from 'src/constants';
+import { DailyBoardType } from 'src/types/board.type';
 import styled from 'styled-components';
 // import { AiTwotoneHeart } from 'react-icons/ai';
 // import { TypoGraphy } from 'src/components';
 // import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
-  contents: string;
+  // contents?: string;
+  detailInfo?: DailyBoardType;
   // likeSelected: boolean;
   // setLikeSelected: Dispatch<SetStateAction<boolean>>;
 };
-export const DetailBody = ({ contents }: Props) => {
+export const DetailBody = ({ detailInfo }: Props) => {
   // const handleLikeButton = () => {
   //   setLikeSelected(data => !data);
   // };
   return (
     <Container>
-      <ContentWrapper>{contents}</ContentWrapper>
+      <ContentWrapper>{detailInfo && detailInfo.contents}</ContentWrapper>
       {/* <LikeButtonWrapper>
         <LikeButton onClick={handleLikeButton}>
           <IconWrapper likeSelected={likeSelected}>
