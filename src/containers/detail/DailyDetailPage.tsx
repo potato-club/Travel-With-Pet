@@ -5,6 +5,8 @@ import { DetailBody, CommentList, DailyDetailHeader } from './components';
 // import { useState } from 'react';
 // import { OwnerType } from 'src/types/user.type';
 import { DailyBoardType } from 'src/types/board.type';
+import { comments } from 'src/dummy/comments';
+
 type Props = {
   detailInfo: DailyBoardType;
 };
@@ -27,10 +29,11 @@ export const DailyDetailPage = ({ detailInfo }: Props) => {
         }}
       />
       <DetailBody
-      // likeSelected={likeSelected}
-      // setLikeSelected={setLikeSelected}
+        contents={detailInfo['contents']}
+        // likeSelected={likeSelected}
+        // setLikeSelected={setLikeSelected}
       />
-      <CommentList commentListProps={detailInfo.comments} />
+      <CommentList commentListProps={comments} />
     </S.Container>
   );
 };
