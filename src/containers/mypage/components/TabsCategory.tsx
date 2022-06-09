@@ -5,10 +5,12 @@ import { useState } from 'react';
 
 type Props = {
   text: string;
+  tab: string;
+  setTab: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export const TabsCategory = ({ text }: Props) => {
-  const [tab, setTab] = useState('정보');
+export const TabsCategory = ({ text, tab, setTab }: Props) => {
+  // const [tab, setTab] = useState('정보');
   return (
     <>
       <Hr />
@@ -35,11 +37,11 @@ export const TabsCategory = ({ text }: Props) => {
         <TabOurs
           selected={tab}
           onClick={() => {
-            setTab('모두의 이야기');
+            setTab('일상');
           }}
         >
           <TypoGraphy type="body1" fontWeight="bold">
-            모두의 이야기
+            일상
           </TypoGraphy>
         </TabOurs>
       </Tabs>

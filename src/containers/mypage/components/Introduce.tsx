@@ -4,14 +4,15 @@ import { TypoGraphy } from '../../../components/TypoGraphy';
 import { BsPersonCircle } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { customColor } from 'src/constants';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { ModalProvider } from 'styled-react-modal';
+import { useState, useRef } from 'react';
+import Image from 'next/image';
 
 export const Introduce = () => {
   const [isExit, setExit] = useState(false);
-
+  const [img, setImg] = useState('');
+  // const formdata = new FormData();
+  const inputRef = useRef(null); // 컴포넌트 재렌더링.. 그 이전에 있던 걸 기억한다
+  console.log(img);
   return (
     <>
       <Div>
@@ -30,38 +31,40 @@ export const Introduce = () => {
                 setExit(!isExit);
               }}
             />
+            {isExit ? (
+              <BtnExitWrapper>
+                <BtnExit>
+                  <TypoGraphy type="body1" fontWeight="bold">
+                    회원탈퇴
+                  </TypoGraphy>
+                </BtnExit>
+              </BtnExitWrapper>
+            ) : (
+              ''
+            )}
           </BtnDots>
         </SignUpDate>
-        {isExit ? (
-          <BtnExitWrapper>
-            <BtnExit>
-              <TypoGraphy type="body1" fontWeight="bold">
-                회원탈퇴
-              </TypoGraphy>
-            </BtnExit>
-          </BtnExitWrapper>
-        ) : (
-          <DivEmptyWrapper>
-            <DivEmpty />
-          </DivEmptyWrapper>
-        )}
         <WrapperInfo>
-          <Div>
-            <img src="" alt="" />
-          </Div>
           <label htmlFor="name">
             <BsPersonCircle size="200px" color="skyblue" />
+            {/* {img !== '' && (
+              <Image src={state.previewURL} width="100px" height="100px" />
+            )} */}
           </label>
           <input
             type="file"
             id="name"
             name="name"
-            style={{}}
-            // onChange={imgHandler}
-          ></input>
+            // ref={inputRef}
+            onChange={e => {
+              console.log('e', e.target);
+              setImg(e.target.value);
+            }}
+          />
           <NickName>
             <TypoGraphy type="h1" fontWeight="bold">
-              양파먹는 소녀{Number(isExit)}
+              양파먹는 소녀
+              {/* {Number(isExit)} */}
             </TypoGraphy>
           </NickName>
           <TextEmail>
@@ -114,31 +117,14 @@ const SignUpDate = styled.div`
 `;
 
 const BtnDots = styled.button`
+  position: relative;
   border: 0px;
   background-color: ${customColor.white};
   cursor: pointer;
 `;
 
-const DivEmpty = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 144px;
-  height: 40px;
-  border-width: 1px;
-  border-radius: 8px;
-  align-items: center;
-  cursor: pointer;
-  margin-left: auto;
-`;
-
-const DivEmptyWrapper = styled.div`
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px;
-`;
-
 const BtnExitWrapper = styled.div`
+  position: absolute;
   right: 0;
   display: flex;
   justify-content: flex-end;
@@ -160,6 +146,7 @@ const BtnExit = styled.button`
 `;
 
 const WrapperInfo = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,6 +190,7 @@ const BtnLogout = styled.button`
 `;
 
 const Div = styled.div`
+  position: relative;
   width: 1180px;
   max-width: 1180px;
 `;

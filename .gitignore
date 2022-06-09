@@ -38,3 +38,5 @@ yarn-error.log*
 *.tsbuildinfo
 
 .env.local
+src/containers/mypage/components/Introduce.tsx
+src/containers/moreViewPage/MoreViewPage.tsx
