@@ -20,25 +20,25 @@ export const Introduce = () => {
         <Hr />
         <SignUpDate>
           <TypoGraphy>가입일자 : 2022. 03. 25 </TypoGraphy>
-          <BtnDots>
-            <BiDotsVerticalRounded
-              size="16px"
-              onClick={() => {
-                setExit(!isExit);
-              }}
-            />
-            {isExit ? (
-              <BtnExitWrapper>
-                <BtnExit onClick={() => twoBtn('회원을 탈퇴하시겠습니까?')}>
-                  <TypoGraphy type="body1" fontWeight="bold">
-                    회원탈퇴
-                  </TypoGraphy>
-                </BtnExit>
-              </BtnExitWrapper>
-            ) : (
-              ''
-            )}
+          <BtnDots
+            onClick={() => {
+              setExit(!isExit);
+            }}
+          >
+            <BiDotsVerticalRounded size="16px" />
           </BtnDots>
+
+          {isExit ? (
+            <BtnExitWrapper>
+              <BtnExit onClick={() => twoBtn('회원을 탈퇴하시겠습니까?')}>
+                <TypoGraphy type="body1" fontWeight="bold">
+                  회원탈퇴
+                </TypoGraphy>
+              </BtnExit>
+            </BtnExitWrapper>
+          ) : (
+            ''
+          )}
         </SignUpDate>
         <WrapperInfo>
           <BsPersonCircle size="200px" color="skyblue" />
@@ -106,9 +106,11 @@ const BtnDots = styled.button`
 const BtnExitWrapper = styled.div`
   position: absolute;
   right: 0;
+  bottom: -50px;
   display: flex;
   justify-content: flex-end;
   padding: 8px;
+  z-index: 9;
 `;
 
 const BtnExit = styled.button`

@@ -36,9 +36,7 @@ export const MyComments = () => {
                   {item.writer}
                 </TypoGraphy>
               </PreviewText>
-              <TypoGraphy type="body1" fontWeight="bold">
-                {item.date}
-              </TypoGraphy>
+              <TypoGraphy type="body1">{item.date}</TypoGraphy>
             </PreviewWrapper>
           </PreviewContainer>
         </Item>
@@ -55,9 +53,9 @@ export const MyComments = () => {
 
 const Item = styled.div``;
 
-const HrSmall = styled.hr`
+const HrSmall = styled.div`
   width: 960px;
-  margin: 0;
+  border-bottom: 1px solid black;
 `;
 const PreviewWrapper = styled.div`
   display: flex;
