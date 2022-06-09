@@ -5,6 +5,7 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { customColor } from 'src/constants';
 import { useState, useRef } from 'react';
+import { twoBtn } from 'src/utils/modal';
 
 export const Introduce = () => {
   const [isExit, setExit] = useState(false);
@@ -28,7 +29,7 @@ export const Introduce = () => {
             />
             {isExit ? (
               <BtnExitWrapper>
-                <BtnExit>
+                <BtnExit onClick={() => twoBtn('회원을 탈퇴하시겠습니까?')}>
                   <TypoGraphy type="body1" fontWeight="bold">
                     회원탈퇴
                   </TypoGraphy>
@@ -65,7 +66,7 @@ export const Introduce = () => {
               </TypoGraphy>
             </Counter>
           </WrapperCounter>
-          <BtnLogout>
+          <BtnLogout onClick={() => twoBtn('로그아웃하시겠습니까?')}>
             <TypoGraphy type="body1" fontWeight="bold">
               로그아웃
             </TypoGraphy>
