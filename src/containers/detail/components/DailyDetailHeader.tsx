@@ -20,7 +20,7 @@ export const DailyDetailHeader = ({ headerInfo }: Props) => {
     <Container>
       <TitleWrapper>
         <TypoGraphy type="Title" color={customColor.black} fontWeight="bold">
-          {headerInfo.title}
+          {headerInfo?.title}
         </TypoGraphy>
       </TitleWrapper>
       <TagWrapper>

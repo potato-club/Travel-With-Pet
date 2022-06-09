@@ -15,8 +15,6 @@ export const InformationDetailPage = ({ detailInfo }: Props) => {
     <S.Container>
       <InformationDetailHeader
         headerInfo={{
-          title: detailInfo.title,
-          category: detailInfo.category,
           city: detailInfo.city,
           detailCity: detailInfo.detailCity,
           tags: detailInfo.tags,
