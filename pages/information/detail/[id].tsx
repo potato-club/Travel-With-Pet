@@ -9,7 +9,7 @@ const InformationDetail: NextPage = () => {
   const detailInfo = InformationBoard.filter(
     data => data._id === String(id),
   )[0];
-  console.log(InformationBoard.filter(data => data._id === String(id)));
+  console.log(detailInfo);
   return <InformationDetailPage detailInfo={detailInfo} />;
 };
 
