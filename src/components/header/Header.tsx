@@ -2,7 +2,6 @@ import * as S from './Header.style';
 import { TypoGraphy } from '../TypoGraphy';
 import { customColor } from 'src/constants';
 import { NavItem } from './components/NavItem';
-import { VscBell } from 'react-icons/vsc';
 import Link from 'next/link';
 import { CustomButton } from '../CustomButton';
 
@@ -36,9 +35,12 @@ export const Header = () => {
               </S.A>
             </Link>
           </S.WriteButtonWrapper>
-          {/* <S.AlertButtonWrapper>
-            <VscBell />
-          </S.AlertButtonWrapper> */}
+
+          <Link href={'/tip'} passHref>
+            <S.A>
+              <S.TipButtonWrapper>TIP</S.TipButtonWrapper>
+            </S.A>
+          </Link>
         </S.UpLeftWrapper>
       </S.UpHeader>
       <S.DownHeader>
