@@ -4,20 +4,11 @@ import { TypoGraphy } from '../../../components/TypoGraphy';
 import { BsPersonCircle } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { customColor } from 'src/constants';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { ModalProvider } from 'styled-react-modal';
+import { useState, useRef } from 'react';
+import { twoBtn } from 'src/utils/modal';
 
 export const Introduce = () => {
   const [isExit, setExit] = useState(false);
-
-  const exitHandler = () => {
-    setExit(!exit);
-  };
-
-  console.log(setExit);
-
   return (
     <>
       <Div>
@@ -36,28 +27,21 @@ export const Introduce = () => {
                 setExit(!isExit);
               }}
             />
+            {isExit ? (
+              <BtnExitWrapper>
+                <BtnExit onClick={() => twoBtn('회원을 탈퇴하시겠습니까?')}>
+                  <TypoGraphy type="body1" fontWeight="bold">
+                    회원탈퇴
+                  </TypoGraphy>
+                </BtnExit>
+              </BtnExitWrapper>
+            ) : (
+              ''
+            )}
           </BtnDots>
         </SignUpDate>
-        <BtnExit>
-          <TypoGraphy type="body1" fontWeight="bold">
-            {/* 회원탈퇴 */}
-            {isExit ? '회원탈퇴' : '프로필 수정'}
-          </TypoGraphy>
-        </BtnExit>
         <WrapperInfo>
-          <Div>
-            <img src="" alt="" />
-          </Div>
-          <label htmlFor="name">
-            <BsPersonCircle size="200px" color="skyblue" />
-          </label>
-          <input
-            type="file"
-            id="name"
-            name="name"
-            style={{ display: 'none' }}
-            // onChange={imgHandler}
-          ></input>
+          <BsPersonCircle size="200px" color="skyblue" />
           <NickName>
             <TypoGraphy type="h1" fontWeight="bold">
               양파먹는 소녀
@@ -82,7 +66,7 @@ export const Introduce = () => {
               </TypoGraphy>
             </Counter>
           </WrapperCounter>
-          <BtnLogout>
+          <BtnLogout onClick={() => twoBtn('로그아웃하시겠습니까?')}>
             <TypoGraphy type="body1" fontWeight="bold">
               로그아웃
             </TypoGraphy>
@@ -113,17 +97,23 @@ const SignUpDate = styled.div`
 `;
 
 const BtnDots = styled.button`
+  position: relative;
   border: 0px;
   background-color: ${customColor.white};
   cursor: pointer;
-  &: hover;
+`;
+
+const BtnExitWrapper = styled.div`
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
 `;
 
 const BtnExit = styled.button`
-  position: relative;
   display: flex;
   justify-content: center;
-  margin-left: 1016px;
   width: 144px;
   height: 40px;
   background-color: ${customColor.white};
@@ -132,9 +122,11 @@ const BtnExit = styled.button`
   border-radius: 8px;
   align-items: center;
   cursor: pointer;
+  margin-left: auto;
 `;
 
 const WrapperInfo = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,4 +169,8 @@ const BtnLogout = styled.button`
   cursor: pointer;
 `;
 
-const Div = styled.div``;
+const Div = styled.div`
+  position: relative;
+  width: 1180px;
+  max-width: 1180px;
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PhotoCard } from './components';
-import { InformationBoardType } from "src/types/board.type";
+import { InformationBoardType } from 'src/types/board.type';
 
 type Props = {
   type: 'MainPage' | 'MyPage';
@@ -11,7 +11,7 @@ type Props = {
 export function PhotoCardList({ type, photoCardInfo }: Props) {
   return (
     <Wrapper type={type}>
-      {photoCardInfo.map((data) => (
+      {photoCardInfo.map(data => (
         <PhotoCard key={data._id} data={data} />
       ))}
     </Wrapper>

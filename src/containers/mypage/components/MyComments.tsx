@@ -1,71 +1,52 @@
-import { customColor } from 'src/constants';
 import styled from 'styled-components';
 import { TypoGraphy } from '../../../components/TypoGraphy';
-import { FaHeart } from 'react-icons/fa';
 import { TabsCategory } from './TabsCategory';
 import { useState } from 'react';
-import { photoCardInfo, totalItemsCount } from 'src/dummy/photoCardInfo';
 import { CustomPagination } from 'src/components/CustomPagination';
-
-type ItemProps = {
-  selected: boolean;
-};
-
-type Selected = {
-  Text: string;
-  Writer: string;
-  Like: number;
-};
+import { comments, CommentsType } from 'src/dummy/comments';
+import React from 'react';
 
 export const MyComments = () => {
-  const [selectedCategory, setSelectedCategory] = useState<Selected>({
-    Text: '한줄이면 이렇게 출력',
-    Writer: '글쓴이닉네임',
-    Like: 23,
-  });
   const [activePage, setActivePage] = useState<number>(1);
+  const commentsPiece: CommentsType[] = [];
+  const pieceNumber = 5;
+  comments.map((data, index) => {
+    if (
+      index < (activePage - 1) * pieceNumber ||
+      index > activePage * pieceNumber - 1
+    ) {
+      return;
+    }
+    commentsPiece.push(data);
+  });
 
   return (
     <>
-      {}
-      <TabsCategory children={'내가 작성한 댓글'} />
-      {photoCardInfo.map(item => (
-        <Item
-          key={item.Writer}
-          // selected={selectedCategory.Writer === item.Writer}
-          onClick={() => {
-            setSelectedCategory(item);
-          }}
-        >
-          <PreviewContainer2>
-            <PreviewContainer>
-              <PreviewContainerPadding>
-                <FaHeart color="red" />
-                <TypoGraphy fontWeight="bold" textAlign="center">
-                  {item.Like}
-                </TypoGraphy>
-              </PreviewContainerPadding>
-              <PreviewContainerPadding>
-                <PreviewPic />
-              </PreviewContainerPadding>
-              <PreviewContainerPadding>
+      <TabsCategory text="내가 작성한 댓글" />
+      <HrSmall />
+      {commentsPiece.map((item, i) => (
+        <Item key={item.id} onClick={() => {}}>
+          <PreviewContainer key={i}>
+            <PreviewWrapper>
+              <PreviewText>
                 <TypoGraphy type="body1" fontWeight="bold">
-                  {item.Text}
+                  {item.content}
                 </TypoGraphy>
-                <PreviewContainerPadding />
                 <TypoGraphy type="body3" color="gray">
-                  {item.Writer}
+                  {item.writer}
                 </TypoGraphy>
-              </PreviewContainerPadding>
-            </PreviewContainer>
-            <HrSmall />
-          </PreviewContainer2>
+              </PreviewText>
+              <TypoGraphy type="body1" fontWeight="bold">
+                {item.date}
+              </TypoGraphy>
+            </PreviewWrapper>
+          </PreviewContainer>
         </Item>
       ))}
       <CustomPagination
         activePage={activePage}
-        itemsCountPerPage={5}
-        totalItemsCount={totalItemsCount}
+        itemsCountPerPage={pieceNumber}
+        totalItemsCount={comments.length}
         onChange={e => setActivePage(e)}
       />
     </>
@@ -76,23 +57,28 @@ const Item = styled.div``;
 
 const HrSmall = styled.hr`
   width: 960px;
+  margin: 0;
+`;
+const PreviewWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  padding-left: 72px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  gap: 16px;
+`;
+
+const PreviewText = styled.div`
+  display: flex;
+  flex: flex-around;
+  flex-direction: column;
+  gap: 16px;
 `;
 
 const PreviewContainer = styled.div`
-  display: flex;
-  margin-right: auto;
-  margin-left: 72px;
+  border-bottom: 1px solid black;
 `;
-
-const PreviewPic = styled.div`
-  width: 40px;
-  height: 40px;
-  color: black;
-  background-color: black;
-`;
-
-const PreviewContainerPadding = styled.div`
-  margin: 12px;
-`;
-
-const PreviewContainer2 = styled.div``;
