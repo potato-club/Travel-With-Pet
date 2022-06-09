@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PhotoCardList, TypoGraphy } from 'src/components';
 import { CustomPagination } from 'src/components/CustomPagination';
+import ListContents from 'src/components/daily/ListContents';
 import { DailyBoard } from 'src/dummy/dailyInfo';
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { DailyBoardType, InformationBoardType } from 'src/types/board.type';
@@ -34,9 +35,19 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
         InformationBoard.filter(item => item.contents.includes(inputData)),
       );
     } else {
-      setList(DailyBoard.filter(item => item.contents.includes(inputData)));
+      setList(
+        DailyBoard.filter(
+          item =>
+            item.title.includes(inputData) || item.contents.includes(inputData),
+        ),
+      );
     }
   };
+  useEffect(() => {
+    setPhotoCardInfoPiece([]);
+    setDailyInfoPiece([]);
+    setList([]);
+  }, [selectedCategory]);
   useEffect(() => {
     setPhotoCardInfoPiece([]);
     setDailyInfoPiece([]);
@@ -53,7 +64,7 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
         setDailyInfoPiece(prev => prev.concat(data));
       }
     });
-  }, [activePage, list, selectedCategory]);
+  }, [activePage, list]);
 
   console.log('list', list);
   console.log('photoCardInfoPiecelist', photoCardInfoPiece);
@@ -86,7 +97,11 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
               </>
             ) : (
               <>
-                <div>일상페이지 들어올 작업</div>
+                <ListContents
+                  activePage={activePage}
+                  pieceNumber={pieceNumber}
+                  dailyData={dailyInfoPiece}
+                />
                 <CustomPagination
                   activePage={activePage}
                   itemsCountPerPage={pieceNumber}

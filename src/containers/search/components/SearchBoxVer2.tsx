@@ -41,6 +41,12 @@ export const SearchBoxVer2 = ({
       alert('검색할 값을 입력해주세요');
     }
   };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearchButton();
+    }
+  };
+
   return (
     <Container>
       <BodyList>
@@ -65,7 +71,12 @@ export const SearchBoxVer2 = ({
         ))}
       </BodyList>
       <InputContainer>
-        <InputBox ref={inputData} />
+        <InputBox
+          ref={inputData}
+          onKeyDown={e => {
+            handleKeyDown(e);
+          }}
+        />
         <ButtonWrapper>
           <CustomButton
             text={'검색'}
