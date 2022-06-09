@@ -7,6 +7,8 @@ const DailyDetail: NextPage = () => {
   const router = useRouter();
   const { id } = router.query;
   const detailInfo = DailyBoard.filter(data => data._id === String(id))[0];
+  console.log(detailInfo);
+
   return <DailyDetailPage detailInfo={detailInfo} />;
 };
 
