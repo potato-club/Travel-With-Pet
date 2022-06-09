@@ -9,8 +9,6 @@ import { OwnerType } from 'src/types/user.type';
 
 type Props = {
   headerInfo: {
-    title: string;
-    category: string;
     city: string;
     detailCity: string;
     tags: string;
