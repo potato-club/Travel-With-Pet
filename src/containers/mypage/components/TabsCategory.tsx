@@ -1,16 +1,14 @@
 import { TypoGraphy } from 'src/components';
 import styled from 'styled-components';
 import { customColor } from 'src/constants';
-import { useState } from 'react';
 
 type Props = {
   text: string;
-  tab: string;
-  setTab: React.Dispatch<React.SetStateAction<string>>;
+  tab?: string;
+  setTab?: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export const TabsCategory = ({ text, tab, setTab }: Props) => {
-  // const [tab, setTab] = useState('정보');
   return (
     <>
       <Hr />
@@ -19,32 +17,34 @@ export const TabsCategory = ({ text, tab, setTab }: Props) => {
           {text}
         </TypoGraphy>
       </Title>
-      <Tabs>
-        <TabInfo
-          selected={tab}
-          onClick={() => {
-            setTab('정보');
-          }}
-        >
-          <TypoGraphy
-            type="body1"
-            fontWeight="bold"
-            color={customColor.brownDark}
+      {tab && setTab && (
+        <Tabs>
+          <TabInfo
+            selected={tab}
+            onClick={() => {
+              setTab('정보');
+            }}
           >
-            정보
-          </TypoGraphy>
-        </TabInfo>
-        <TabOurs
-          selected={tab}
-          onClick={() => {
-            setTab('일상');
-          }}
-        >
-          <TypoGraphy type="body1" fontWeight="bold">
-            일상
-          </TypoGraphy>
-        </TabOurs>
-      </Tabs>
+            <TypoGraphy
+              type="body1"
+              fontWeight="bold"
+              color={customColor.brownDark}
+            >
+              정보
+            </TypoGraphy>
+          </TabInfo>
+          <TabOurs
+            selected={tab}
+            onClick={() => {
+              setTab('일상');
+            }}
+          >
+            <TypoGraphy type="body1" fontWeight="bold">
+              일상
+            </TypoGraphy>
+          </TabOurs>
+        </Tabs>
+      )}
     </>
   );
 };

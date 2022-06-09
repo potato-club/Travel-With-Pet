@@ -5,14 +5,9 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { customColor } from 'src/constants';
 import { useState, useRef } from 'react';
-import Image from 'next/image';
 
 export const Introduce = () => {
   const [isExit, setExit] = useState(false);
-  const [img, setImg] = useState('');
-  // const formdata = new FormData();
-  const inputRef = useRef(null); // 컴포넌트 재렌더링.. 그 이전에 있던 걸 기억한다
-  console.log(img);
   return (
     <>
       <Div>
@@ -45,26 +40,10 @@ export const Introduce = () => {
           </BtnDots>
         </SignUpDate>
         <WrapperInfo>
-          <label htmlFor="name">
-            <BsPersonCircle size="200px" color="skyblue" />
-            {/* {img !== '' && (
-              <Image src={state.previewURL} width="100px" height="100px" />
-            )} */}
-          </label>
-          <input
-            type="file"
-            id="name"
-            name="name"
-            // ref={inputRef}
-            onChange={e => {
-              console.log('e', e.target);
-              setImg(e.target.value);
-            }}
-          />
+          <BsPersonCircle size="200px" color="skyblue" />
           <NickName>
             <TypoGraphy type="h1" fontWeight="bold">
               양파먹는 소녀
-              {/* {Number(isExit)} */}
             </TypoGraphy>
           </NickName>
           <TextEmail>

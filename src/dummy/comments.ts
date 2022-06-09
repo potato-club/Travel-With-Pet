@@ -28,4 +28,25 @@ export const comments: CommentsType[] = [
     date: '2022.01.23',
     time: '03:22',
   },
+  {
+    id: 4,
+    writer: '양파먹는소녀s2',
+    content: '댓글 테스트11',
+    date: '2022.01.23',
+    time: '03:22',
+  },
+  {
+    id: 5,
+    writer: '다카포Da capo2',
+    content: '댓글 테스트12',
+    date: '2022.01.23',
+    time: '03:22',
+  },
+  {
+    id: 6,
+    writer: '인간 맛동산2',
+    content: '댓글 테스트13',
+    date: '2022.01.23',
+    time: '03:22',
+  },
 ];
