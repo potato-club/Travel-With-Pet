@@ -31,7 +31,7 @@ export function Info(props: Props) {
         </LikeWrapper> */}
       </ItemWrapper>
       <ContentWrapper>
-        <TypoGraphy fontWeight="bold" fontHeight="1.2" type="body1">
+        <TypoGraphy fontWeight="bold" fontHeight='1.4em' type="body1">
           {Text}
         </TypoGraphy>
       </ContentWrapper>
@@ -59,12 +59,11 @@ const LikeWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  max-height: 2.4em;
-  overflow: hidden;
-  min-height: 40px;
+  max-height: 2.8em;
 `;
 
 const HeartWrapper = styled.div`

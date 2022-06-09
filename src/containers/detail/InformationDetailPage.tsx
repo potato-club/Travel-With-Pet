@@ -25,8 +25,9 @@ export const InformationDetailPage = ({ detailInfo }: Props) => {
         }}
       />
       <DetailBody
-      // likeSelected={likeSelected}
-      // setLikeSelected={setLikeSelected}
+        // likeSelected={likeSelected}
+        // setLikeSelected={setLikeSelected}
+        contents={detailInfo['contents']}
       />
       <CommentList commentListProps={comments} />
     </S.Container>
