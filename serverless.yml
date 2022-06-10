@@ -1,0 +1,10 @@
+myNextApplication:
+  component: '@sls-next/serverless-component'
+  inputs:
+    name:
+      defaultLambda: 'travel-with-pet'
+    bucketRegion: 'ap-northeast-2'
+    bucketName: 'travel-with-pet'
+
+    cloudfront:
+      distributionId: 'E1QXQWUJWFTQXR'
