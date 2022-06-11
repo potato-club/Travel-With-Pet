@@ -1,7 +1,7 @@
 import { DailyBoardType } from 'src/types/board.type';
 let unique = 1;
 let commentNumber = 1;
-export const DailyBoard: DailyBoardType[] = [
+export const DailyBoardData: DailyBoardType[] = [
   {
     _id: String(unique),
     title: '첫번째 게시글임',
@@ -724,7 +724,7 @@ export const DailyBoard: DailyBoardType[] = [
   },
   {
     _id: String(unique),
-    title: '타이틀',
+    title: '마지막 데일리~',
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
@@ -741,3 +741,5 @@ export const DailyBoard: DailyBoardType[] = [
     __v: unique++,
   },
 ];
+
+export const DailyBoard = DailyBoardData.reverse();

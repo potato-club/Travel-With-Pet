@@ -1,6 +1,6 @@
 import { InformationBoardType } from 'src/types/board.type';
 let unique = 1;
-export const InformationBoard: InformationBoardType[] = [
+export const InformationBoardData: InformationBoardType[] = [
   {
     _id: String(unique),
     title: '여행을 다녀왔습니다',
@@ -1523,7 +1523,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 전 여행',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1544,7 +1544,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 전 음식점',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1565,7 +1565,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 전 숙소',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1586,7 +1586,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 전 기타',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1607,7 +1607,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 여행',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1628,7 +1628,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 음식점',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1649,7 +1649,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 숙소',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1670,7 +1670,7 @@ export const InformationBoard: InformationBoardType[] = [
     city: '인천',
     detailCity: '구월동',
     tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    contents: '마지막 기타',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1685,3 +1685,5 @@ export const InformationBoard: InformationBoardType[] = [
     __v: unique++,
   },
 ];
+
+export const InformationBoard = InformationBoardData.reverse();
