@@ -47,9 +47,9 @@ export const EditorMainPage: React.FC = () => {
   const [detailCity, setDetailCity] = useState('');
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState('');
-  // 값 증가하는 방식 해결해야 함
 
   let unique = Date.now() + Math.random();
+
   const postInfoData: InformationBoardType = {
     _id: String(unique),
     title,
@@ -57,7 +57,9 @@ export const EditorMainPage: React.FC = () => {
     city: selectedCity.name,
     detailCity,
     tags,
-    contents: editorRef.current?.getInstance().getMarkdown(),
+    contents: editorRef.current?.getInstance().getMarkdown()
+      ? editorRef.current?.getInstance().getMarkdown()
+      : '',
     heart: 0,
     commentCount: 0,
     comments: [],
@@ -76,7 +78,9 @@ export const EditorMainPage: React.FC = () => {
     _id: String(unique),
     title,
     tags,
-    contents: editorRef.current?.getInstance().getMarkdown(),
+    contents: editorRef.current?.getInstance().getMarkdown()
+      ? editorRef.current?.getInstance().getMarkdown()
+      : '',
     heart: 0,
     commentCount: 0,
     comments: [],

@@ -4,7 +4,7 @@ export type DailyBoardType = {
   _id: string;
   title: string;
   tags: string;
-  contents?: string;
+  contents: string;
   heart: number;
   commentCount: number;
   comments: any[];
@@ -20,7 +20,7 @@ export type InformationBoardType = {
   city: string;
   detailCity: string;
   tags: string;
-  contents?: string;
+  contents: string;
   heart: number;
   commentCount: number;
   comments: any[];
