@@ -1,5 +1,5 @@
 import { DailyBoardType } from 'src/types/board.type';
-let unique = 1;
+export let unique = 1;
 let commentNumber = 1;
 export const DailyBoard: DailyBoardType[] = [
   {

@@ -9,6 +9,8 @@ import { EditorProps, Editor as EditorType } from '@toast-ui/react-editor';
 import { TuiWithForwardedRefProps } from './components/EditorForm';
 import { InformationBoardType } from 'src/types/board.type';
 import { DailyBoardType } from 'src/types/board.type';
+import { unique as dailyInfoUnique } from 'src/dummy/dailyInfo';
+import { unique as photoCardInfoUnique } from 'src/dummy/photoCardInfo';
 
 type Selected = {
   name: string;
@@ -48,10 +50,12 @@ export const EditorMainPage: React.FC = () => {
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState('');
 
-  let unique = Date.now() + Math.random();
+  // 어떻게 1 증가하게 할지
+  let photoCardInfoUniquePlus = photoCardInfoUnique;
+  let dailyInfoUniquePlus = dailyInfoUnique;
 
   const postInfoData: InformationBoardType = {
-    _id: String(unique),
+    _id: String(photoCardInfoUniquePlus),
     title,
     category: selectedCategory.name,
     city: selectedCity.name,
@@ -68,14 +72,14 @@ export const EditorMainPage: React.FC = () => {
       email: 'bigyou00@gmail.com',
       avatarUrl: '..',
       name: '박상훈',
-      __v: unique,
+      __v: photoCardInfoUniquePlus,
     },
     createdAt: new Date(),
-    __v: unique++,
+    __v: photoCardInfoUniquePlus++,
   };
 
   const postDailyData: DailyBoardType = {
-    _id: String(unique),
+    _id: String(dailyInfoUniquePlus),
     title,
     tags,
     contents: editorRef.current?.getInstance().getMarkdown()
@@ -89,10 +93,10 @@ export const EditorMainPage: React.FC = () => {
       email: 'bigyou00@gmail.com',
       avatarUrl: '..',
       name: '박상훈',
-      __v: unique,
+      __v: dailyInfoUniquePlus,
     },
     createdAt: new Date(),
-    __v: unique++,
+    __v: dailyInfoUniquePlus++,
   };
 
   return (

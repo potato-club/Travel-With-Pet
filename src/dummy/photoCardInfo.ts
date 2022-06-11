@@ -1,5 +1,5 @@
 import { InformationBoardType } from 'src/types/board.type';
-let unique = 1;
+export let unique = 1;
 export const InformationBoard: InformationBoardType[] = [
   {
     _id: String(unique),
