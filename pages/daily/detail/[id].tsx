@@ -7,7 +7,7 @@ const DailyDetail = () => {
   const router = useRouter();
 
   const detailInfo = DailyBoard.filter(data => data._id === router.query.id)[0];
-  console.log(detailInfo);
+  console.log('detailInfo', detailInfo);
 
   return <DailyDetailPage detailInfo={detailInfo} />;
 };

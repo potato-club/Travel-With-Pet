@@ -5,11 +5,19 @@ import { useRouter } from 'next/router';
 
 export default function InformationDetail() {
   const router = useRouter();
-  const detailInfo = InformationBoard.filter(
-    data => data._id === String(router.query.id),
-  )[0];
-  console.log(detailInfo);
-  return <InformationDetailPage detailInfo={detailInfo} />;
+  if (router.query.id && Number(router.query.id) > InformationBoard.length) {
+    return <div>페이지가 없습니다!</div>;
+  } else if (
+    router.query.id &&
+    Number(router.query.id) <= InformationBoard.length
+  ) {
+    const detailInfo = InformationBoard.filter(
+      data => data._id === String(router.query.id),
+    )[0];
+    // console.log('detailInfo', detailInfo);
+    return <InformationDetailPage detailInfo={detailInfo} />;
+  }
+  return <div>404 ERROR</div>;
 }
 
 // export async function getServerSideProps(context: { query: { id: number } }) {
