@@ -7,6 +7,8 @@ import { ButtonBox, ToggleBox, InformationForm } from './components';
 import { useRef } from 'react';
 import { EditorProps, Editor as EditorType } from '@toast-ui/react-editor';
 import { TuiWithForwardedRefProps } from './components/EditorForm';
+import { InformationBoardType } from 'src/types/board.type';
+import { DailyBoardType } from 'src/types/board.type';
 
 type Selected = {
   name: string;
@@ -32,17 +34,62 @@ const EditorWithForwardRef = forwardRef<EditorType | undefined, EditorProps>(
 EditorWithForwardRef.displayName = 'EditorWithForwardRef';
 
 export const EditorMainPage: React.FC = () => {
-  const [choose, setChoose] = useState('information');
   const editorRef = useRef<EditorType>(null);
+  const [choose, setChoose] = useState('information');
   const [selectedCategory, setSelectedCategory] = useState<Selected>({
     name: '여행',
     value: 'trip',
   });
-
   const [selectedCity, setSelectedCity] = useState<Selected>({
     name: '서울',
     value: 'seoul',
   });
+  const [detailCity, setDetailCity] = useState('');
+  const [title, setTitle] = useState('');
+  const [tags, setTags] = useState('');
+  // 값 증가하는 방식 해결해야 함
+
+  let unique = Date.now() + Math.random();
+  const postInfoData: InformationBoardType = {
+    _id: String(unique),
+    title,
+    category: selectedCategory.name,
+    city: selectedCity.name,
+    detailCity,
+    tags,
+    contents: editorRef.current?.getInstance().getMarkdown(),
+    heart: 0,
+    commentCount: 0,
+    comments: [],
+    owner: {
+      _id: '321251232',
+      email: 'bigyou00@gmail.com',
+      avatarUrl: '..',
+      name: '박상훈',
+      __v: unique,
+    },
+    createdAt: new Date(),
+    __v: unique++,
+  };
+
+  const postDailyData: DailyBoardType = {
+    _id: String(unique),
+    title,
+    tags,
+    contents: editorRef.current?.getInstance().getMarkdown(),
+    heart: 0,
+    commentCount: 0,
+    comments: [],
+    owner: {
+      _id: '321251232',
+      email: 'bigyou00@gmail.com',
+      avatarUrl: '..',
+      name: '박상훈',
+      __v: unique,
+    },
+    createdAt: new Date(),
+    __v: unique++,
+  };
 
   return (
     <Wrapper>
@@ -55,15 +102,33 @@ export const EditorMainPage: React.FC = () => {
           setSelectedCategory={setSelectedCategory}
           selectedCity={selectedCity}
           setSelectedCity={setSelectedCity}
+          detailCity={detailCity}
+          setDetailCity={setDetailCity}
         />
       ) : (
-        <Input placeholder="제목을 입력하세요 " />
+        <Input
+          placeholder="제목을 입력하세요 "
+          value={title}
+          onChange={e => {
+            setTitle(e.target.value);
+          }}
+        />
       )}
       <Hr />
-      <Input placeholder="#태그 #입력 #인천" />
+      <Input
+        placeholder="#태그 #입력 #인천"
+        value={tags}
+        onChange={e => {
+          setTags(e.target.value);
+        }}
+      />
       <Hr />
       <EditorWithForwardRef ref={editorRef} />
-      <ButtonBox />
+      <ButtonBox
+        choose={choose}
+        postInfoData={postInfoData}
+        postDailyData={postDailyData}
+      />
     </Wrapper>
   );
 };

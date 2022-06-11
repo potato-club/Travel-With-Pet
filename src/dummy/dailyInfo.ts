@@ -26,7 +26,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -44,7 +44,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -62,7 +62,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -80,7 +80,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -98,7 +98,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -116,7 +116,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -134,7 +134,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -152,7 +152,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -170,7 +170,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -188,7 +188,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -206,7 +206,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -224,7 +224,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -242,7 +242,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -260,7 +260,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -278,7 +278,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -296,7 +296,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -314,7 +314,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -332,7 +332,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -350,7 +350,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -368,7 +368,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -386,7 +386,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -404,7 +404,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -422,7 +422,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -440,7 +440,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -458,7 +458,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -476,7 +476,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -494,7 +494,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -512,7 +512,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -530,7 +530,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -548,7 +548,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -566,7 +566,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -584,7 +584,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -602,7 +602,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -620,7 +620,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -638,7 +638,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -656,7 +656,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -674,7 +674,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -692,7 +692,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -710,7 +710,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
@@ -728,7 +728,7 @@ export const DailyBoard: DailyBoardType[] = [
     tags: '#태그#분리하기#됐나',
     contents: '여기에 내용, 사진 같이 들어감',
     heart: 1,
-   commentCount: commentNumber++,
+    commentCount: commentNumber++,
     comments: [],
     owner: {
       _id: '123124',
