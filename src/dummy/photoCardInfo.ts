@@ -3,12 +3,13 @@ let unique = 1;
 export const InformationBoard: InformationBoardType[] = [
   {
     _id: String(unique),
-    title: '타이틀',
+    title: '여행을 다녀왔습니다',
     category: '여행',
     city: '인천',
     detailCity: '구월동',
-    tags: '#태그#나중에#분리하기',
-    contents: '여기에 내용, 사진 같이 들어감',
+    tags: '#여행#단체사진#꿀잼',
+    contents:
+      '너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f4eac623-721e-483e-b399-30de51ab1882.png)',
     heart: 1,
     commentCount: 1,
     comments: [],
