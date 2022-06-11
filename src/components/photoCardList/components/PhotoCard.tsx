@@ -19,13 +19,25 @@ export const PhotoCard = ({ data }: Props) => {
   // ! contents 에서 사진URL이랑 내용을 분리해와야함.
 
   const imageUrl = () => {
-    const thumbnailStart = contents.indexOf('![imageURL]');
+    const firstThumbnail = contents.indexOf('![imageURL]');
+    if (firstThumbnail === -1) return '/DefaultThumbnail.png';
 
-    if (thumbnailStart === -1) return '/DefaultThumbnail.png';
+    const thumbnailType = contents.indexOf(')', firstThumbnail);
+    const thumbnail = contents.slice(firstThumbnail + 12, thumbnailType);
 
-    const thumbnailType = contents.indexOf(')', thumbnailStart);
-    const thumbnail = contents.slice(thumbnailStart + 12, thumbnailType);
     return thumbnail;
+  };
+
+  const textTest = () => {
+    const firstThumbnail = contents.indexOf('![imageURL]');
+    if (firstThumbnail === -1) return contents;
+    const imageCount = contents.match(/!\[imageURL\]/g)?.length; // 있으면 number, 없으면 undefined
+
+    if (typeof imageCount === 'number') {
+      for (let i = 0; i < imageCount; ++i) {
+        
+      }
+    }
   };
 
   const text =
