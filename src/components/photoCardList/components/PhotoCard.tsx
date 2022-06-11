@@ -38,6 +38,8 @@ export const PhotoCard = ({ data }: Props) => {
         
       }
     }
+    // Todo 아래코드 지우기
+    return contents;
   };
 
   const text =
@@ -51,7 +53,7 @@ export const PhotoCard = ({ data }: Props) => {
           <Info
             Area={city}
             // Like={Like}
-            Text={text}
+            Text={textTest()}
             Writer={writer}
             Date={createdAt}
           />
