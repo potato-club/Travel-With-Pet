@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TypoGraphy } from 'src/components';
 import styled from 'styled-components';
 import { customColor } from 'src/constants';
@@ -63,7 +63,7 @@ export default function ListContents({ dailyData, pieceNumber, activePage }: Pro
                   fontWeight="bold"
                   color={customColor.brownDark}
                 >
-                  ({data.commentCount})
+                  {data.commentCount !== 0 && `(${data.commentCount})`}
                 </TypoGraphy>
               </TextWrapper>
               <TextWrapper>
