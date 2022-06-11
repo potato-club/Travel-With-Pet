@@ -6,7 +6,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '게임하는데 고양이가 키보드를 눌러서 망했어요',
     tags: '#게임#집사#슬픔',
     contents:
-      '뭐가 뿔났는지 고양이가 게임하고있는데 와서 키보드를 마구잡이로 누르는 바람에 게임에서 졌습니다.. 다들 이런경험 있으신가요??',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)뭐가 뿔났는지 고양이가 게임하고있는데 와서 키보드를 마구잡이로 누르는 바람에 게임에서 졌습니다.. 다들 이런경험 있으신가요??',
     heart: 1,
     commentCount: 0,
     comments: [],
@@ -25,7 +25,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '강아지 사료 드셔보셨나요?',
     tags: '#궁금#사료',
     contents:
-      '우리집 강아지가 사료를 너무 맛있게 먹길래 궁금해서 한입 먹어봤는데 와.. 다들 얼른 한번씩 드셔보세요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)우리집 강아지가 사료를 너무 맛있게 먹길래 궁금해서 한입 먹어봤는데 와.. 다들 얼른 한번씩 드셔보세요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -44,7 +44,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '일상적인 소소한 이야기',
     tags: '#일상#자랑#소소#행복',
     contents:
-      '오늘 야근하고 집에 늦게 들어오니까 우리집 고양이가 문앞에서 반겨주더라고요. 이맛에 집사하나봐요 ㅎㅎ',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8bdcd74e-1c6a-4e4c-be92-ac0e61e31c9c.jpeg)오늘 야근하고 집에 늦게 들어오니까 우리집 고양이가 문앞에서 반겨주더라고요. 이맛에 집사하나봐요 ㅎㅎ',
     heart: 1,
     commentCount: 2,
     comments: [],
@@ -62,7 +62,8 @@ export const DailyBoardData: DailyBoardType[] = [
     _id: String(unique),
     title: '강아지랑 갈만한곳 있을까요?',
     tags: '#산책#여행#식당#추천#추천#추천',
-    contents: '반려동물이랑 같이 산책할만한곳 추천받습니다~ 지역은 서울입니다',
+    contents:
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)반려동물이랑 같이 산책할만한곳 추천받습니다~ 지역은 서울입니다',
     heart: 1,
     commentCount: 4,
     comments: [],
@@ -81,7 +82,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '강아지 이름 고민',
     tags: '#이름#작명#고민',
     contents:
-      '강아지를 키우려는데 이름은 뭐로할지 고민입니다. 둥글둥글하고 귀여운 이미지인데 괜찮은 이름 있을까요??',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)강아지를 키우려는데 이름은 뭐로할지 고민입니다. 둥글둥글하고 귀여운 이미지인데 괜찮은 이름 있을까요??',
     heart: 1,
     commentCount: 0,
     comments: [],
@@ -100,7 +101,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '강아지랑 함께 뒹굴뒹굴',
     tags: '#행복#뒹굴#편안',
     contents:
-      '다들 이번주말에 뭐하시나요? 저는 제 강아지와 함께 집에서 뒹굴뒹굴할 예정입니다 ㅎㅎ',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)다들 이번주말에 뭐하시나요? 저는 제 강아지와 함께 집에서 뒹굴뒹굴할 예정입니다 ㅎㅎ',
     heart: 1,
     commentCount: 2,
     comments: [],
@@ -119,7 +120,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '강아지 훈련 팁 공유',
     tags: '#훈련#꿀팁#공유',
     contents:
-      '저희집 강아지는 손, 앉아 말고도 빵야 하면 뒤로 눕고 일어서! 하면 두발로 서서 저를 따라옵니다 신기하죠? 강아지 훈련은 주인이 먼저 그 행동을 하면서 따라하면 됩니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/04d73daa-0d66-4228-a784-2320a703ad69.jpeg)저희집 강아지는 손, 앉아 말고도 빵야 하면 뒤로 눕고 일어서! 하면 두발로 서서 저를 따라옵니다 신기하죠? 강아지 훈련은 주인이 먼저 그 행동을 하면서 따라하면 됩니다!',
     heart: 1,
     commentCount: 3,
     comments: [],
@@ -138,7 +139,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '그냥 자랑하고 싶어서 쓰는 글',
     tags: '#자랑#일상',
     contents:
-      '우리집 아이인데 너무 귀엽지 않나요? 너무 귀여워서 자랑하고 싶어서 그냥 올려봤어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/090d2edc-57de-4ebe-857b-82406639f22c.jpeg)우리집 아이인데 너무 귀엽지 않나요? 너무 귀여워서 자랑하고 싶어서 그냥 올려봤어요!',
     heart: 1,
     commentCount: 0,
     comments: [],
@@ -157,7 +158,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '강아지랑 고양이중에 뭐가 더 좋을까요??',
     tags: '#초보#고민#주인#집사',
     contents:
-      '반려동물을 키워본적이 없는데 강아지랑 고양이 둘다 좋은데 고민입니다 ㅠㅠ',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4c335196-d5ca-48d5-8016-647595f775df.jpeg)반려동물을 키워본적이 없는데 강아지랑 고양이 둘다 좋은데 고민입니다 ㅠㅠ',
     heart: 1,
     commentCount: 4,
     comments: [],
@@ -177,7 +178,7 @@ export const DailyBoardData: DailyBoardType[] = [
       '다들 강아지 산책은 어느 주기로 하고 계신가요? 저는 일주일에 3번씩 합니다',
     tags: '#산책#주기#몇번',
     contents:
-      '다들 강아지 산책은 어느 주기로 하고 계신가요? 일주일에 3번씩 하는데 점점 지쳐갑니다.. 다들 어느정도로 하는지 궁금합니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/04d73daa-0d66-4228-a784-2320a703ad69.jpeg)다들 강아지 산책은 어느 주기로 하고 계신가요? 일주일에 3번씩 하는데 점점 지쳐갑니다.. 다들 어느정도로 하는지 궁금합니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -196,7 +197,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '고양이가 목욕할때 말썽피우는데 다들 어떻게 하시나요?',
     tags: '#목욕#말썽',
     contents:
-      '고양이가 목욕할때 말썽을 피우는데 다들 본인만의 비법이 있나요? 집사님들 도와주세요!',
+      'https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)고양이가 목욕할때 말썽을 피우는데 다들 본인만의 비법이 있나요? 집사님들 도와주세요!',
     heart: 1,
     commentCount: 3,
     comments: [],

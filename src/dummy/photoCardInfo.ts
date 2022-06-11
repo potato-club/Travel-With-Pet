@@ -9,7 +9,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#대구#북구',
     contents:
-      '대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -31,7 +31,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -53,7 +53,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -75,7 +75,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#산책#공원#운동',
     contents:
-      '서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -97,7 +97,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -119,7 +119,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -141,7 +141,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -163,7 +163,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -185,7 +185,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#여행#경기#군포',
     contents:
-      '경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -207,7 +207,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#대구#북구#꿀맛',
     contents:
-      '강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -229,7 +229,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '간석동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -251,7 +251,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#산책#벤치#커피#카페',
     contents:
-      '경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -273,7 +273,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#추억#꿀잼#대구#인천',
     contents:
-      '너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -295,7 +295,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -317,7 +317,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -339,7 +339,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '한강',
     tags: '#산책#공원#운동',
     contents:
-      '서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -361,7 +361,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -383,7 +383,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -405,7 +405,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -427,7 +427,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/cfb4b071-c273-4b05-9dbc-3cc4bf5e6ca5.jpeg)산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -448,7 +448,8 @@ export const InformationBoardData: InformationBoardType[] = [
     city: '인천',
     detailCity: '부평',
     tags: '#여행#추억#꿀잼#인천',
-    contents: '너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
+    contents:
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -470,7 +471,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#경기#군포#북구#꿀맛',
     contents:
-      '경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -492,7 +493,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -514,7 +515,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#산책#벤치#커피#카페#바다',
     contents:
-      '부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -536,7 +537,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#대구#북구',
     contents:
-      '대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -559,7 +560,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -581,7 +582,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -603,7 +604,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#산책#공원#운동',
     contents:
-      '서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -625,7 +626,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -647,7 +648,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -669,7 +670,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -691,7 +692,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -713,7 +714,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#여행#경기#군포',
     contents:
-      '경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -735,7 +736,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#대구#북구#꿀맛',
     contents:
-      '강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f102f37f-1c79-4a75-b9be-6bf9ce46995a.jpeg)강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -757,7 +758,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '간석동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/e54a52c7-9685-46f8-b8a1-54da3ccfc1e3.jpeg)고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -779,7 +780,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#산책#벤치#커피#카페',
     contents:
-      '경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/e54a52c7-9685-46f8-b8a1-54da3ccfc1e3.jpeg)경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -801,7 +802,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#추억#꿀잼#대구#인천',
     contents:
-      '너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f44fd0b4-9bd2-4a62-97a3-924c24cd1075.jpeg)너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -823,7 +824,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f102f37f-1c79-4a75-b9be-6bf9ce46995a.jpeg)홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -845,7 +846,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -867,7 +868,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '한강',
     tags: '#산책#공원#운동',
     contents:
-      '서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/cfb4b071-c273-4b05-9dbc-3cc4bf5e6ca5.jpeg)서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -976,7 +977,8 @@ export const InformationBoardData: InformationBoardType[] = [
     city: '인천',
     detailCity: '부평',
     tags: '#여행#추억#꿀잼#인천',
-    contents: '너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
+    contents:
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -998,7 +1000,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#경기#군포#북구#꿀맛',
     contents:
-      '경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1020,7 +1022,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8bdcd74e-1c6a-4e4c-be92-ac0e61e31c9c.jpeg)반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1042,7 +1044,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#산책#벤치#커피#카페#바다',
     contents:
-      '부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1064,7 +1066,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#대구#북구',
     contents:
-      '대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/9c7e76ac-cc24-4593-9700-ec503dd3402c.jpeg)대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1087,7 +1089,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1109,7 +1111,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1131,7 +1133,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#산책#공원#운동',
     contents:
-      '서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1153,7 +1155,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/04d73daa-0d66-4228-a784-2320a703ad69.jpeg)강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1175,7 +1177,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/090d2edc-57de-4ebe-857b-82406639f22c.jpeg)인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1197,7 +1199,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4c335196-d5ca-48d5-8016-647595f775df.jpeg)전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1219,7 +1221,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1241,7 +1243,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#여행#경기#군포',
     contents:
-      '경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/2278d5b9-2965-47a6-9cac-36a8f82fcd59.jpeg)경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1263,7 +1265,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#대구#북구#꿀맛',
     contents:
-      '강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1285,7 +1287,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '간석동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4e09ada0-c708-46bc-baba-c14bfa036704.jpeg)고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1307,7 +1309,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#산책#벤치#커피#카페',
     contents:
-      '경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4c335196-d5ca-48d5-8016-647595f775df.jpeg)경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1329,7 +1331,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#추억#꿀잼#대구#인천',
     contents:
-      '너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/090d2edc-57de-4ebe-857b-82406639f22c.jpeg)너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1351,7 +1353,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/04d73daa-0d66-4228-a784-2320a703ad69.jpeg)홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1373,7 +1375,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1395,7 +1397,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '한강',
     tags: '#산책#공원#운동',
     contents:
-      '서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1417,7 +1419,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1439,7 +1441,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/9c7e76ac-cc24-4593-9700-ec503dd3402c.jpeg)위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1461,7 +1463,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1483,7 +1485,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8bdcd74e-1c6a-4e4c-be92-ac0e61e31c9c.jpeg)산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1504,7 +1506,8 @@ export const InformationBoardData: InformationBoardType[] = [
     city: '인천',
     detailCity: '부평',
     tags: '#여행#추억#꿀잼#인천',
-    contents: '너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
+    contents:
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1526,7 +1529,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#경기#군포#북구#꿀맛',
     contents:
-      '경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1548,7 +1551,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1570,7 +1573,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#산책#벤치#커피#카페#바다',
     contents:
-      '부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/cfb4b071-c273-4b05-9dbc-3cc4bf5e6ca5.jpeg)부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1592,7 +1595,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#대구#북구',
     contents:
-      '대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)대구에 여행을 갔다왔습니다. 카운터에 문의 후 반려동물을 데려갔는데 데려가서 케어해주시더라구요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1615,7 +1618,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f102f37f-1c79-4a75-b9be-6bf9ce46995a.jpeg)진짜 맛있는 맛집이 있는데 소개해드릴려고 합니다! 반려동물도 같이 들어갈수있대요! 너무 좋았습니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1637,7 +1640,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f44fd0b4-9bd2-4a62-97a3-924c24cd1075.jpeg)숙소를 알아봤는데, 반려동물도 출입이 가능한곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1659,7 +1662,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#산책#공원#운동',
     contents:
-      '서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/e54a52c7-9685-46f8-b8a1-54da3ccfc1e3.jpeg)서울 마포동에 위치한 산책로인데, 다른사람들과 공유하고 싶어서 글을 올립니다 여기 되게 좋아요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1681,7 +1684,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/e54a52c7-9685-46f8-b8a1-54da3ccfc1e3.jpeg)강아지들과 바다보러 해운대에 갔는데 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1703,7 +1706,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f44fd0b4-9bd2-4a62-97a3-924c24cd1075.jpeg)인천 구월동에 있는 튀김 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1725,7 +1728,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/f102f37f-1c79-4a75-b9be-6bf9ce46995a.jpeg)전문강사님께서 반려동물을 맡아주시는 숙소가 있습니다! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1747,7 +1750,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/1c208a4b-5c5e-470d-aa81-2c9a762bd66a.jpeg)너무 좋은곳을 발견했는데, 저 혼자 알기 아쉬워서 공유하고자 글을 올리게 되었습니다. 강아지들이 너무 좋아하는 산책로에요! 인천 부평구입니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1769,7 +1772,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#여행#경기#군포',
     contents:
-      '경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/cfb4b071-c273-4b05-9dbc-3cc4bf5e6ca5.jpeg)경기도 군포시에 있는곳에 여행을 갔다왔는데, 정말 재밌었습니다. 주변에 한세대학교라는 학교도 있고, 가면서 먹은 타코야끼도 굉장히 맛있었습니다. 산책하기 좋은 공원도 있더라구요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1791,7 +1794,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#대구#북구#꿀맛',
     contents:
-      '강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/37dd23e7-bf4d-4673-b726-7bb628220b82.jpeg)강아지 출입을 허용하는 매장이 있어서 공유해드리고자 글을 올립니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1813,7 +1816,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '간석동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/c1f863de-9507-44f0-9287-a67aa2dcefa3.jpeg)고양이 전용 숙소가 있다는데 다들 알고 계셨나요? 인천 간석동에 위치한 곳입니다 공유해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1835,7 +1838,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#산책#벤치#커피#카페',
     contents:
-      '경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/fb014886-a283-457e-8fdc-7f8071f92499.jpeg)경기도 군포시에 산책할만한 곳이 있네요! 타코야끼도 맛있고 주변에 한세대학교 축제를 하길래 너무 재밌었습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1857,7 +1860,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#여행#추억#꿀잼#대구',
     contents:
-      '너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8bdcd74e-1c6a-4e4c-be92-ac0e61e31c9c.jpeg)너무 재밌고 기분좋았던 여행지를 추천해드리고자 게시글을 작성하게 되었습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1879,7 +1882,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '홍대',
     tags: '#맛집#대박#서울#홍대',
     contents:
-      '홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/dcb35e89-1ffe-43c3-a5c6-a00b7d9a84f2.jpeg)홍대쪽에 놀러갈일이 있어서 반려동물을 데리고 갔는데 너무 맛있고, 가성비 좋은 식당이 있어서 소개해드립니다!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1901,7 +1904,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#숙소#행복#경기#군포',
     contents:
-      '숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/9c7e76ac-cc24-4593-9700-ec503dd3402c.jpeg)숙소를 알아보던 도중 반려동물을 같이 데려갈 수 있는곳이 있더라구요! 정말 잘됐습니다 저는 반려동물과 함께 행복한 시간을 보냈답니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1923,7 +1926,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '한강',
     tags: '#산책#공원#운동',
     contents:
-      '서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/6123faf9-b861-48da-8152-15cbafa67a37.jpeg)서울 한강은 역시 산책하기에 너무 좋은곳인것 같아요 다들 아실거라고 생각합니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1945,7 +1948,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#여행#부산#바다#추억',
     contents:
-      '부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/8a38540c-fc7c-461c-96b7-268dc9c6d29e.jpeg)부산광역시 해운대에 놀러갔다왔어요! 강아지들이 너무 행복해했고 저도 그 모습을 보면서 너무 행복했습니다~',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1967,7 +1970,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '구월동',
     tags: '#맛집#튀김#편안',
     contents:
-      '위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/d0711b4c-25e3-44c1-bf9f-ff1d38be316b.jpeg)위치는 인천 구월동이고 튀김맛집을 갔다왔습니다! 강아지 전용 밥도 따로 판매하셔서 너무 좋았습니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -1989,7 +1992,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '마포동',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/04d73daa-0d66-4228-a784-2320a703ad69.jpeg)강아지를 데리고 갈 수 있는 숙박시설이 있더라구요! 서울 마포동에 위치한 곳입니다. 너무 좋았어요',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -2011,7 +2014,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '부평',
     tags: '#산책#공부#벤치',
     contents:
-      '산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/090d2edc-57de-4ebe-857b-82406639f22c.jpeg)산책할만한곳이 어디있나 찾아보던 도중 인천 부평구에 괜찮은곳이 있어서 공유해드립니다',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -2032,7 +2035,8 @@ export const InformationBoardData: InformationBoardType[] = [
     city: '인천',
     detailCity: '부평',
     tags: '#여행#추억#꿀잼#인천',
-    contents: '너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
+    contents:
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4c335196-d5ca-48d5-8016-647595f775df.jpeg)너무너무 재밌는 하루였어요! 우리 이쁜 아이들좀 보세요!!!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -2054,7 +2058,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '군포',
     tags: '#경기#군포#북구#꿀맛',
     contents:
-      '경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/4e09ada0-c708-46bc-baba-c14bfa036704.jpeg)경기도 군포시에 있는 돈가스 전문점에 갔다왔는데 강아지 출입을 허용하는 매장이여서 편안하게 갔다왔습니다 추천해드려요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -2076,7 +2080,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '북구',
     tags: '#숙소#행복#편안#꿀잼',
     contents:
-      '반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)반려동물을 맡겨달라고 숙소에 미리 전화로 예약해두면, 전문강사님께서 맡아주시더라구요! 추가비용도 얼마안해서 부담없이 편하게 잘 다녀왔습니다. 아이들도 행복해보였어요!',
     heart: 1,
     commentCount: 1,
     comments: [],
@@ -2098,7 +2102,7 @@ export const InformationBoardData: InformationBoardType[] = [
     detailCity: '해운대',
     tags: '#산책#벤치#커피#카페#바다',
     contents:
-      '부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/2278d5b9-2965-47a6-9cac-36a8f82fcd59.jpeg)부산광역시에 공부하기 편한 벤치가 있더라구요! 주변에 카페도있고 커피마시면서 강아지 산책시키기에도 너무 좋은것 같아서 공유해드립니다!',
     heart: 1,
     commentCount: 1,
     comments: [],
