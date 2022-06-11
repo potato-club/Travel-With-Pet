@@ -32,9 +32,7 @@ const EditorForm: React.FC<TuiWithForwardedRefProps> = props => {
             accessKeyId: process.env.NEXT_PUBLIC_S3_UPLOAD_KEY as string,
             secretAccessKey: process.env.NEXT_PUBLIC_S3_UPLOAD_SECRET as string,
           };
-
           const ReactS3Client = new S3(s3config);
-
           try {
             const res = await ReactS3Client.uploadFile(blob, uuidv4());
             callback(res.location, 'imageURL');

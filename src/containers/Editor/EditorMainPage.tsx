@@ -11,6 +11,7 @@ import { InformationBoardType } from 'src/types/board.type';
 import { DailyBoardType } from 'src/types/board.type';
 import { unique as dailyInfoUnique } from 'src/dummy/dailyInfo';
 import { unique as photoCardInfoUnique } from 'src/dummy/photoCardInfo';
+import { useEffect } from 'react';
 
 type Selected = {
   name: string;
@@ -37,6 +38,10 @@ EditorWithForwardRef.displayName = 'EditorWithForwardRef';
 
 export const EditorMainPage: React.FC = () => {
   const editorRef = useRef<EditorType>(null);
+  const [photoCardInfoUniquePlus, setPhotoCardInfoUniquePlus] =
+    useState(photoCardInfoUnique);
+  const [dailyInfoUniquePlus, setDailyInfoUniquePlus] =
+    useState(dailyInfoUnique);
   const [choose, setChoose] = useState('information');
   const [selectedCategory, setSelectedCategory] = useState<Selected>({
     name: '여행',
@@ -50,10 +55,6 @@ export const EditorMainPage: React.FC = () => {
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState('');
 
-  // 어떻게 1 증가하게 할지
-  let photoCardInfoUniquePlus = photoCardInfoUnique;
-  let dailyInfoUniquePlus = dailyInfoUnique;
-
   const postInfoData: InformationBoardType = {
     _id: String(photoCardInfoUniquePlus),
     title,
@@ -62,8 +63,8 @@ export const EditorMainPage: React.FC = () => {
     detailCity,
     tags,
     contents: editorRef.current?.getInstance().getMarkdown()
-      ? editorRef.current?.getInstance().getMarkdown()
-      : '',
+      ? editorRef.current.getInstance().getMarkdown()
+      : '게시글 에러',
     heart: 0,
     commentCount: 0,
     comments: [],
@@ -75,7 +76,7 @@ export const EditorMainPage: React.FC = () => {
       __v: photoCardInfoUniquePlus,
     },
     createdAt: new Date(),
-    __v: photoCardInfoUniquePlus++,
+    __v: photoCardInfoUniquePlus,
   };
 
   const postDailyData: DailyBoardType = {
@@ -83,8 +84,8 @@ export const EditorMainPage: React.FC = () => {
     title,
     tags,
     contents: editorRef.current?.getInstance().getMarkdown()
-      ? editorRef.current?.getInstance().getMarkdown()
-      : '',
+      ? editorRef.current.getInstance().getMarkdown()
+      : '게시글 에러',
     heart: 0,
     commentCount: 0,
     comments: [],
@@ -96,7 +97,7 @@ export const EditorMainPage: React.FC = () => {
       __v: dailyInfoUniquePlus,
     },
     createdAt: new Date(),
-    __v: dailyInfoUniquePlus++,
+    __v: dailyInfoUniquePlus,
   };
 
   return (
@@ -136,6 +137,8 @@ export const EditorMainPage: React.FC = () => {
         choose={choose}
         postInfoData={postInfoData}
         postDailyData={postDailyData}
+        setPhotoCardInfoUniquePlus={setPhotoCardInfoUniquePlus}
+        setDailyInfoUniquePlus={setDailyInfoUniquePlus}
       />
     </Wrapper>
   );

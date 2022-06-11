@@ -13,6 +13,8 @@ type ButtonBoxProps = {
   choose: string;
   postInfoData: InformationBoardType;
   postDailyData: DailyBoardType;
+  setPhotoCardInfoUniquePlus: Function;
+  setDailyInfoUniquePlus: Function;
 };
 type AddInfoType = {
   (postData: InformationBoardType): void;
@@ -24,15 +26,26 @@ export const ButtonBox: React.FC<ButtonBoxProps> = ({
   choose,
   postInfoData,
   postDailyData,
+  setPhotoCardInfoUniquePlus,
+  setDailyInfoUniquePlus,
 }) => {
   const router = useRouter();
 
+  const test = () => {
+    console.log(postInfoData.contents);
+  };
   const addInfo: AddInfoType = postInfoData => {
+    // 여기서 contents를 바꿀까
+    // object로 통일하고 부분만 변경하는 식으로 할까
+    setPhotoCardInfoUniquePlus((cur: number) => (cur += 1));
     InformationBoard.push(postInfoData);
+    console.log(postInfoData.contents);
   };
 
   const addDaily: AddDailyType = postDailyData => {
+    setDailyInfoUniquePlus((cur: number) => (cur += 1));
     DailyBoard.push(postDailyData);
+    console.log(postDailyData.contents);
   };
 
   const clickAdd = () => {
@@ -61,6 +74,7 @@ export const ButtonBox: React.FC<ButtonBoxProps> = ({
         color={customColor.black}
         onClick={clickCancel}
       />
+      <button onClick={test}>클릭 숫자증가</button>
       <CustomButton text="등록" width={120} onClick={clickAdd} />
     </Wrapper>
   );
