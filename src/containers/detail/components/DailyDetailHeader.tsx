@@ -31,7 +31,7 @@ export const DailyDetailHeader = ({ detailInfo }: Props) => {
       <InfoWrapper>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {detailInfo?.owner}
+            {detailInfo?.owner.name}
           </TypoGraphy>
         </Info>
         <Info>

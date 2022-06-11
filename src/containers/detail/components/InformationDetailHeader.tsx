@@ -29,7 +29,7 @@ export const InformationDetailHeader = ({ detailInfo }: Props) => {
       <InfoWrapper>
         <Info>
           <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {detailInfo?.owner}
+            {detailInfo?.owner.name}
           </TypoGraphy>
         </Info>
         <Info>
@@ -37,23 +37,6 @@ export const InformationDetailHeader = ({ detailInfo }: Props) => {
             {detailInfo && formatDate(detailInfo.createdAt)}
           </TypoGraphy>
         </Info>
-        {/* <Info>
-          <IconWrapper color={customColor.red}>
-            <AiFillHeart />
-          </IconWrapper>
-          <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {detailData.Like}
-          </TypoGraphy>
-        </Info>
-
-        <Info>
-          <IconWrapper color={customColor.blackLight}>
-            <BsPerson />
-          </IconWrapper>
-          <TypoGraphy type="body2" color={customColor.gray} fontHeight="20px">
-            {detailData.View}
-          </TypoGraphy>
-        </Info> */}
       </InfoWrapper>
     </Container>
   );

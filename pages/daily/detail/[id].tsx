@@ -6,10 +6,16 @@ import { DailyBoard } from 'src/dummy/dailyInfo';
 const DailyDetail = () => {
   const router = useRouter();
 
-  const detailInfo = DailyBoard.filter(data => data._id === router.query.id)[0];
-  console.log(detailInfo);
-
-  return <DailyDetailPage detailInfo={detailInfo} />;
+  if (router.query.id && Number(router.query.id) > DailyBoard.length) {
+    return <div>페이지가 없습니다!</div>;
+  } else if (router.query.id && Number(router.query.id) <= DailyBoard.length) {
+    const detailInfo = DailyBoard.filter(
+      data => data._id === router.query.id,
+    )[0];
+    // console.log('detailInfo', detailInfo);
+    return <DailyDetailPage detailInfo={detailInfo} />;
+  }
+  return <div>404 ERROR</div>;
 };
 
 // export async function getServerSideProps(context: { query: { id: number } }) {
