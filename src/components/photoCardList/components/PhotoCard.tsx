@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Info, Tag } from './index';
 import styled from 'styled-components';
 // import { InformationBoardType } from 'src/constants/photoCard.type';
@@ -13,7 +13,7 @@ export const PhotoCard = ({ data }: Props) => {
   // const { id, ImageUrl, Area, Like, Text, Writer, Date, Tags }: PhotoCardInfoType = data;
   const { _id, city, tags, owner, createdAt, contents }: InformationBoardType =
     data;
-
+  const [slicedText, setSlicedText] = useState('');
   const writer = owner.name;
 
   // ! contents 에서 사진URL이랑 내용을 분리해와야함.
@@ -28,20 +28,20 @@ export const PhotoCard = ({ data }: Props) => {
     return thumbnail;
   };
 
-  const textTest = () => {
-    const firstThumbnail = contents.indexOf('![imageURL]');
-    if (firstThumbnail === -1) return contents;
-    const imageCount = contents.match(/!\[imageURL\]/g)?.length; // 있으면 number, 없으면 undefined
-
-    if (typeof imageCount === 'number') {
-      for (let i = 0; i < imageCount; ++i) {
-        
-      }
+  useEffect(() => {
+    let tempSlicer = '';
+    for (let i = 0; i < contents.length; ++i) {
+      if (contents[i] === '!') {
+        const imageData = contents.indexOf('![imageURL]', i);
+        if (imageData - i === 0) {
+          i = contents.indexOf(')', imageData);
+        } else {
+          if (tempSlicer.length < 50) tempSlicer += contents[i];
+        }
+      } else if (tempSlicer.length < 50) tempSlicer += contents[i];
     }
-    // Todo 아래코드 지우기
-    return contents;
-  };
-
+    setSlicedText(tempSlicer);
+  }, [contents]);
   const text =
     '사진url, 내용은 정적으로 넣은거. 나중에 분리해야함 지금은 테스트중입니다 가나다라마바사';
 
@@ -53,7 +53,7 @@ export const PhotoCard = ({ data }: Props) => {
           <Info
             Area={city}
             // Like={Like}
-            Text={textTest()}
+            Text={slicedText}
             Writer={writer}
             Date={createdAt}
           />
