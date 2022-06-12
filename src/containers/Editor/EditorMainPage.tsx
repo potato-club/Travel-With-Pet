@@ -9,10 +9,9 @@ import { EditorProps, Editor as EditorType } from '@toast-ui/react-editor';
 import { TuiWithForwardedRefProps } from './components/EditorForm';
 import { InformationBoardType } from 'src/types/board.type';
 import { DailyBoardType } from 'src/types/board.type';
-import { unique as dailyInfoUnique } from 'src/dummy/dailyInfo';
-import { unique as photoCardInfoUnique } from 'src/dummy/photoCardInfo';
+import { DailyBoard } from 'src/dummy/dailyInfo';
+import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { useEffect } from 'react';
-
 type Selected = {
   name: string;
   value: string;
@@ -38,10 +37,6 @@ EditorWithForwardRef.displayName = 'EditorWithForwardRef';
 
 export const EditorMainPage: React.FC = () => {
   const editorRef = useRef<EditorType>(null);
-  const [photoCardInfoUniquePlus, setPhotoCardInfoUniquePlus] =
-    useState(photoCardInfoUnique);
-  const [dailyInfoUniquePlus, setDailyInfoUniquePlus] =
-    useState(dailyInfoUnique);
   const [choose, setChoose] = useState('information');
   const [selectedCategory, setSelectedCategory] = useState<Selected>({
     name: '여행',
@@ -56,7 +51,7 @@ export const EditorMainPage: React.FC = () => {
   const [tags, setTags] = useState('');
 
   const postInfoData: InformationBoardType = {
-    _id: String(photoCardInfoUniquePlus),
+    _id: String(InformationBoard.length + 1),
     title,
     category: selectedCategory.name,
     city: selectedCity.name,
@@ -73,14 +68,14 @@ export const EditorMainPage: React.FC = () => {
       email: 'bigyou00@gmail.com',
       avatarUrl: '..',
       name: '박상훈',
-      __v: photoCardInfoUniquePlus,
+      __v: InformationBoard.length + 1,
     },
     createdAt: new Date(),
-    __v: photoCardInfoUniquePlus,
+    __v: InformationBoard.length + 1,
   };
 
   const postDailyData: DailyBoardType = {
-    _id: String(dailyInfoUniquePlus),
+    _id: String(DailyBoard.length + 1),
     title,
     tags,
     contents: editorRef.current?.getInstance().getMarkdown()
@@ -94,10 +89,10 @@ export const EditorMainPage: React.FC = () => {
       email: 'bigyou00@gmail.com',
       avatarUrl: '..',
       name: '박상훈',
-      __v: dailyInfoUniquePlus,
+      __v: DailyBoard.length + 1,
     },
     createdAt: new Date(),
-    __v: dailyInfoUniquePlus,
+    __v: DailyBoard.length + 1,
   };
 
   return (
@@ -137,8 +132,6 @@ export const EditorMainPage: React.FC = () => {
         choose={choose}
         postInfoData={postInfoData}
         postDailyData={postDailyData}
-        setPhotoCardInfoUniquePlus={setPhotoCardInfoUniquePlus}
-        setDailyInfoUniquePlus={setDailyInfoUniquePlus}
       />
     </Wrapper>
   );
