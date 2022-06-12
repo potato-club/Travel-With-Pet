@@ -26,15 +26,12 @@ export const ButtonBox: React.FC<ButtonBoxProps> = ({
   postDailyData,
 }) => {
   const router = useRouter();
-
   const addInfo: AddInfoType = postInfoData => {
     InformationBoard.push(postInfoData);
-    console.log(postInfoData.contents);
   };
 
   const addDaily: AddDailyType = postDailyData => {
     DailyBoard.push(postDailyData);
-    console.log(postDailyData.contents);
   };
 
   const clickAdd = () => {
@@ -45,7 +42,6 @@ export const ButtonBox: React.FC<ButtonBoxProps> = ({
       }, 2000),
     );
   };
-
   const clickCancel = () => {
     twoBtn('글 쓰기를 취소하시겠습니까?', () =>
       setTimeout(() => {
