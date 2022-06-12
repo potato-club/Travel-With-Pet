@@ -11,12 +11,15 @@ export function Tag({ Tags }: Props) {
     <TagContainer>
       {tagsArray?.map((tag, index) => {
         if (index === 0) return; // split('#') 를 사용해서 0번째 인덱스는 공백 '' 이 나옴.
-        return (
-        <TagWrapper key={index}>
-          <TypoGraphy type="body3" color={customColor.brownDark}>
-            {index < 5 ? tag : null}
-          </TypoGraphy>
-        </TagWrapper>);
+        if (index < 5) { // 최대 4개까지 출력
+          return (
+            <TagWrapper key={index}>
+              <TypoGraphy type="body3" color={customColor.brownDark}>
+                {tag}
+              </TypoGraphy>
+            </TagWrapper>
+          );
+        }
       })}
     </TagContainer>
   );

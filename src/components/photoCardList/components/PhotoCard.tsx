@@ -28,22 +28,25 @@ export const PhotoCard = ({ data }: Props) => {
     return thumbnail;
   };
 
-  const textTest = () => {
+  const getContents = () => {
     const firstThumbnail = contents.indexOf('![imageURL]');
     if (firstThumbnail === -1) return contents;
     const imageCount = contents.match(/!\[imageURL\]/g)?.length; // 있으면 number, 없으면 undefined
+    let filterContents = contents;
 
     if (typeof imageCount === 'number') {
       for (let i = 0; i < imageCount; ++i) {
-        
+        const imageStart = filterContents.indexOf('![imageURL]');
+        const imageEnd = filterContents.indexOf(')', imageStart);
+        filterContents = filterContents.replace(
+          filterContents.substring(imageStart, imageEnd + 1),
+          '',
+        );
       }
     }
-    // Todo 아래코드 지우기
-    return contents;
+    return filterContents;
   };
 
-  const text =
-    '사진url, 내용은 정적으로 넣은거. 나중에 분리해야함 지금은 테스트중입니다 가나다라마바사';
 
   return (
     <Container>
@@ -53,7 +56,7 @@ export const PhotoCard = ({ data }: Props) => {
           <Info
             Area={city}
             // Like={Like}
-            Text={textTest()}
+            Text={getContents()}
             Writer={writer}
             Date={createdAt}
           />
