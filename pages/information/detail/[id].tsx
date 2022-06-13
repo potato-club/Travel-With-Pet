@@ -3,8 +3,10 @@ import { InformationDetailPage } from 'src/containers/detail/InformationDetailPa
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { useRouter } from 'next/router';
 
-export default function InformationDetail() {
+console.log('sss');
+const InformationDetail: NextPage = () => {
   const router = useRouter();
+  // console.log(Number(router.query.id), InformationBoard.length - 1);
   if (router.query.id && Number(router.query.id) > InformationBoard.length) {
     return <div>페이지가 없습니다!</div>;
   } else if (
@@ -18,8 +20,8 @@ export default function InformationDetail() {
     return <InformationDetailPage detailInfo={detailInfo} />;
   }
   return <div>404 ERROR</div>;
-}
-
+};
+export default InformationDetail;
 // export async function getServerSideProps(context: { query: { id: number } }) {
 //   const { id } = context.query;
 

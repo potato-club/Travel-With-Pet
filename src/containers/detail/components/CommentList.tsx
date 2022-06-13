@@ -6,7 +6,7 @@ import { Comment } from './';
 import { twoBtn } from 'src/utils/modal';
 import { comments } from 'src/dummy/comments';
 
-export const CommentList = ({ commentLength }: { commentLength: number }) => {
+export const CommentList = ({ commentLength }: { commentLength?: number }) => {
   const handleReportButton = () => {
     twoBtn('신고하시겠습니까?');
   };
@@ -33,23 +33,25 @@ export const CommentList = ({ commentLength }: { commentLength: number }) => {
       <Line />
 
       <CommentWrapper>
-        {commentLength === 0 ? (
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100px',
-            }}
-          >
-            댓글이 없습니다.
-          </div>
-        ) : (
-          comments.map(
-            (data, i) =>
-              i < commentLength && <Comment key={data.id} data={data} />,
-          )
-        )}
+        {commentLength &&
+          (commentLength === 0 ? (
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100px',
+              }}
+            >
+              댓글이 없습니다.
+            </div>
+          ) : (
+            commentLength &&
+            comments.map(
+              (data, i) =>
+                i < commentLength && <Comment key={data.id} data={data} />,
+            )
+          ))}
       </CommentWrapper>
 
       <InputWrapper>

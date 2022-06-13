@@ -1,26 +1,30 @@
 // import { customColor } from 'src/constants';
+import dynamic from 'next/dynamic';
 import { DailyBoardType } from 'src/types/board.type';
 import styled from 'styled-components';
-import { PostViewer } from './PostViewer';
 // import { AiTwotoneHeart } from 'react-icons/ai';
 // import { TypoGraphy } from 'src/components';
 // import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
   // contents?: string;
-  detailInfo: DailyBoardType;
+  detailInfo?: DailyBoardType;
   // likeSelected: boolean;
   // setLikeSelected: Dispatch<SetStateAction<boolean>>;
 };
+
 export const DetailBody = ({ detailInfo }: Props) => {
   // const handleLikeButton = () => {
   //   setLikeSelected(data => !data);
   // };
+  const PostViewer = dynamic<any>(() => import('./PostViewer'), {
+    ssr: false,
+  });
   return (
     <Container>
       {/* {detailInfo && detailInfo.contents} */}
       <ContentWrapper>
-        <PostViewer contents={detailInfo.contents} />
+        {detailInfo && <PostViewer contents={detailInfo.contents} />}
       </ContentWrapper>
       {/* <LikeButtonWrapper>
         <LikeButton onClick={handleLikeButton}>
