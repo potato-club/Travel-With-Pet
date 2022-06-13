@@ -13,7 +13,11 @@ export const InformationPage: NextPage = () => {
   const otherData: InformationBoardType[] = [];
 
   const sliceData = (dataArray: InformationBoardType[], category: string) => {
-    for (let i = 0; dataArray.length < 4 && i < InformationBoard.length; ++i) {
+    for (
+      let i = InformationBoard.length - 1;
+      dataArray.length < 4 && i >= 0;
+      --i
+    ) {
       InformationBoard[i].category === category &&
         dataArray.push(InformationBoard[i]);
     }
