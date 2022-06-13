@@ -2,19 +2,17 @@ import { CustomButton, TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import styled from 'styled-components';
 import { AiOutlineAlert } from 'react-icons/ai';
-import { CommentsType } from 'src/dummy/comments';
 import { Comment } from './';
-import { useState } from 'react';
 import { twoBtn } from 'src/utils/modal';
+import { comments } from 'src/dummy/comments';
 
-type Props = {
-  commentListProps: CommentsType[];
-};
-export const CommentList = ({ commentListProps }: Props) => {
+export const CommentList = ({ commentLength }: { commentLength: number }) => {
   const handleReportButton = () => {
     twoBtn('신고하시겠습니까?');
   };
-
+  const handleAddComment = () => {
+    twoBtn('댓글을 작성하시겠습니까?');
+  };
   return (
     <Container>
       <HeaderWrapper>
@@ -35,15 +33,33 @@ export const CommentList = ({ commentListProps }: Props) => {
       <Line />
 
       <CommentWrapper>
-        {commentListProps.map(data => (
-          <Comment key={data.id} data={data} />
-        ))}
+        {commentLength === 0 ? (
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100px',
+            }}
+          >
+            댓글이 없습니다.
+          </div>
+        ) : (
+          comments.map(
+            (data, i) =>
+              i < commentLength && <Comment key={data.id} data={data} />,
+          )
+        )}
       </CommentWrapper>
 
       <InputWrapper>
         <Input />
         <ButtonWrapper>
-          <CustomButton text="댓글작성" width={130} />
+          <CustomButton
+            text="댓글작성"
+            width={130}
+            onClick={handleAddComment}
+          />
         </ButtonWrapper>
       </InputWrapper>
     </Container>
