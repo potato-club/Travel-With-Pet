@@ -8,19 +8,14 @@ import { CustomPagination } from 'src/components/CustomPagination';
 
 export function List() {
   const [activePage, setActivePage] = useState<number>(1);
-  // const DailyBoardPiece: DailyBoardType[] = [];
-  const [dailyBoard, setDailyBoard] = useState<DailyBoardType[]>(
-    [...DailyBoardData].reverse(),
-  );
+
   const [dailyBoardPiece, setDailyBoardPiece] = useState<DailyBoardType[]>([]);
   const pieceNumber = 10;
 
   useEffect(() => {
-    setDailyBoard([...DailyBoardData].reverse());
-  }, []);
-  useEffect(() => {
     setDailyBoardPiece([]);
-    dailyBoard.map((data, index) => {
+
+    [...DailyBoardData].reverse().map((data, index) => {
       if (
         index < (activePage - 1) * pieceNumber ||
         index > activePage * pieceNumber - 1

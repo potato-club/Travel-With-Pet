@@ -3,14 +3,14 @@ import { TypoGraphy } from '../../../components/TypoGraphy';
 import { TabsCategory } from './TabsCategory';
 import { useState } from 'react';
 import { CustomPagination } from 'src/components/CustomPagination';
-import { comments, CommentsType } from 'src/dummy/comments';
+import { myComments, CommentsType } from 'src/dummy/comments';
 import React from 'react';
 
 export const MyComments = () => {
   const [activePage, setActivePage] = useState<number>(1);
   const commentsPiece: CommentsType[] = [];
   const pieceNumber = 5;
-  comments.map((data, index) => {
+  myComments.map((data, index) => {
     if (
       index < (activePage - 1) * pieceNumber ||
       index > activePage * pieceNumber - 1
@@ -44,7 +44,7 @@ export const MyComments = () => {
       <CustomPagination
         activePage={activePage}
         itemsCountPerPage={pieceNumber}
-        totalItemsCount={comments.length}
+        totalItemsCount={myComments.length}
         onChange={e => setActivePage(e)}
       />
     </>
