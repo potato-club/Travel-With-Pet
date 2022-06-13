@@ -9,9 +9,8 @@ import { EditorProps, Editor as EditorType } from '@toast-ui/react-editor';
 import { TuiWithForwardedRefProps } from './components/EditorForm';
 import { InformationBoardType } from 'src/types/board.type';
 import { DailyBoardType } from 'src/types/board.type';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 import { InformationBoard } from 'src/dummy/photoCardInfo';
-import { useEffect } from 'react';
 type Selected = {
   name: string;
   value: string;
@@ -65,9 +64,9 @@ export const EditorMainPage: React.FC = () => {
     comments: [],
     owner: {
       _id: '321251232',
-      email: 'bigyou00@gmail.com',
+      email: '19adsfasdf@gmail.com',
       avatarUrl: '..',
-      name: '박상훈',
+      name: '양파먹는 소녀',
       __v: InformationBoard.length + 1,
     },
     createdAt: new Date(),
@@ -75,7 +74,7 @@ export const EditorMainPage: React.FC = () => {
   };
 
   const postDailyData: DailyBoardType = {
-    _id: String(DailyBoard.length + 1),
+    _id: String(DailyBoardData.length + 1),
     title,
     tags,
     contents: editorRef.current?.getInstance().getMarkdown()
@@ -86,13 +85,13 @@ export const EditorMainPage: React.FC = () => {
     comments: [],
     owner: {
       _id: '321251232',
-      email: 'bigyou00@gmail.com',
+      email: '19adsfasdf@gmail.com',
       avatarUrl: '..',
-      name: '박상훈',
-      __v: DailyBoard.length + 1,
+      name: '양파먹는 소녀',
+      __v: DailyBoardData.length + 1,
     },
     createdAt: new Date(),
-    __v: DailyBoard.length + 1,
+    __v: DailyBoardData.length + 1,
   };
 
   return (

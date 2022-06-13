@@ -1,36 +1,48 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ListContents from '../../../components/daily/ListContents';
 import ListHeader from '../../../components/daily/ListHeader';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 import { DailyBoardType } from 'src/types/board.type';
 import { CustomPagination } from 'src/components/CustomPagination';
 
 export function List() {
   const [activePage, setActivePage] = useState<number>(1);
-  const DailyBoardPiece: DailyBoardType[] = [];
+  // const DailyBoardPiece: DailyBoardType[] = [];
+  const [dailyBoard, setDailyBoard] = useState<DailyBoardType[]>(
+    [...DailyBoardData].reverse(),
+  );
+  const [dailyBoardPiece, setDailyBoardPiece] = useState<DailyBoardType[]>([]);
   const pieceNumber = 10;
-  DailyBoard.map((data, index) => {
-    if (
-      index < (activePage - 1) * pieceNumber ||
-      index > activePage * pieceNumber - 1
-    ) {
-      return;
-    }
-    DailyBoardPiece.push(data);
-  });
+
+  useEffect(() => {
+    setDailyBoard([...DailyBoardData].reverse());
+  }, []);
+  useEffect(() => {
+    setDailyBoardPiece([]);
+    dailyBoard.map((data, index) => {
+      if (
+        index < (activePage - 1) * pieceNumber ||
+        index > activePage * pieceNumber - 1
+      ) {
+        return;
+      }
+
+      setDailyBoardPiece(prev => prev.concat(data));
+    });
+  }, [activePage]);
   return (
     <Container>
       <ListHeader />
       <ListContents
         activePage={activePage}
         pieceNumber={pieceNumber}
-        dailyData={DailyBoardPiece}
+        dailyData={dailyBoardPiece}
       />
       <CustomPagination
         activePage={activePage}
         itemsCountPerPage={pieceNumber}
-        totalItemsCount={DailyBoard.length}
+        totalItemsCount={DailyBoardData.length}
         onChange={e => setActivePage(e)}
       />
     </Container>

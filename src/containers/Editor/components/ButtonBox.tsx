@@ -4,8 +4,8 @@ import { CustomButton } from 'src/components';
 import { customColor } from 'src/constants/index';
 import { noBtn, twoBtn } from 'src/utils/modal';
 import styled from 'styled-components';
-import { InformationBoard } from 'src/dummy/photoCardInfo';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import { InformationBoardData } from 'src/dummy/photoCardInfo';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 import { InformationBoardType } from 'src/types/board.type';
 import { DailyBoardType } from 'src/types/board.type';
 
@@ -27,11 +27,11 @@ export const ButtonBox: React.FC<ButtonBoxProps> = ({
 }) => {
   const router = useRouter();
   const addInfo: AddInfoType = postInfoData => {
-    InformationBoard.push(postInfoData);
+    InformationBoardData.push(postInfoData);
   };
 
   const addDaily: AddDailyType = postDailyData => {
-    DailyBoard.push(postDailyData);
+    DailyBoardData.push(postDailyData);
   };
 
   const clickAdd = () => {

@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import React, { useEffect, useMemo } from 'react';
+import React from 'react';
 import { Category } from './components';
 import { FixedButton, Notice, PhotoCardList, Search } from 'src/components';
 import styled from 'styled-components';
@@ -14,7 +14,8 @@ export const InformationPage: NextPage = () => {
 
   const sliceData = (dataArray: InformationBoardType[], category: string) => {
     for (let i = 0; dataArray.length < 4 && i < InformationBoard.length; ++i) {
-      InformationBoard[i].category === category && dataArray.push(InformationBoard[i]);
+      InformationBoard[i].category === category &&
+        dataArray.push(InformationBoard[i]);
     }
   };
 

@@ -197,7 +197,7 @@ export const DailyBoardData: DailyBoardType[] = [
     title: '고양이가 목욕할때 말썽피우는데 다들 어떻게 하시나요?',
     tags: '#목욕#말썽',
     contents:
-      'https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)고양이가 목욕할때 말썽을 피우는데 다들 본인만의 비법이 있나요? 집사님들 도와주세요!',
+      '![imageURL](https://meongmeong-tui-img-storage.s3-ap-northeast-2.amazonaws.com/db99a0ac-a6d8-44f6-9d92-4924b5e44045.jpeg)고양이가 목욕할때 말썽을 피우는데 다들 본인만의 비법이 있나요? 집사님들 도와주세요!',
     heart: 1,
     commentCount: 3,
     comments: [],
@@ -213,4 +213,4 @@ export const DailyBoardData: DailyBoardType[] = [
   },
 ];
 
-export const DailyBoard = DailyBoardData.reverse();
+// export const DailyBoard = [...DailyBoardData].reverse();
