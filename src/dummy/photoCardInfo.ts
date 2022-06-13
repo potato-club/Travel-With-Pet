@@ -1,7 +1,7 @@
 import { InformationBoardType } from 'src/types/board.type';
 
 let unique = 1;
-export const InformationBoardData: InformationBoardType[] = [
+export const InformationBoard: InformationBoardType[] = [
   {
     _id: String(unique),
     title: '너무 재미있는 여행이였어요',
@@ -2118,5 +2118,3 @@ export const InformationBoardData: InformationBoardType[] = [
     __v: unique++,
   },
 ];
-
-export const InformationBoard = InformationBoardData.reverse();

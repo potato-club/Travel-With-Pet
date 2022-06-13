@@ -29,7 +29,7 @@ export function MoreViewPage() {
     }
   };
   function dataCollect() {
-    for (let i = 0; i < InformationBoard.length; ++i) {
+    for (let i = InformationBoard.length - 1; i >= 0; --i) {
       InformationBoard[i].category === category() &&
         categoryData.push(InformationBoard[i]);
     }
