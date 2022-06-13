@@ -1,4 +1,5 @@
 import { InformationBoardType } from 'src/types/board.type';
+
 let unique = 1;
 export const InformationBoardData: InformationBoardType[] = [
   {

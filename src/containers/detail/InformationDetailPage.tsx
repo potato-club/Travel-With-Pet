@@ -5,7 +5,7 @@ import { comments } from 'src/dummy/comments';
 // import { OwnerType } from 'src/types/user.type';
 import { InformationBoardType } from 'src/types/board.type';
 type Props = {
-  detailInfo?: InformationBoardType;
+  detailInfo: InformationBoardType;
 };
 
 export const InformationDetailPage = ({ detailInfo }: Props) => {
