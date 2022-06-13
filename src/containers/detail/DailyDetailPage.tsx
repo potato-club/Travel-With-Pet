@@ -7,7 +7,7 @@ import { DetailBody, CommentList, DailyDetailHeader } from './components';
 import { DailyBoardType } from 'src/types/board.type';
 
 type Props = {
-  detailInfo: DailyBoardType;
+  detailInfo?: DailyBoardType;
 };
 
 export const DailyDetailPage = ({ detailInfo }: Props) => {
@@ -19,7 +19,7 @@ export const DailyDetailPage = ({ detailInfo }: Props) => {
         // likeSelected={likeSelected}
         // setLikeSelected={setLikeSelected}
       />
-      <CommentList commentLength={detailInfo.commentCount} />
+      <CommentList commentLength={detailInfo?.commentCount} />
     </S.Container>
   );
 };
