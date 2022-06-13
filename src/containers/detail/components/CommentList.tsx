@@ -33,25 +33,24 @@ export const CommentList = ({ commentLength }: { commentLength?: number }) => {
       <Line />
 
       <CommentWrapper>
-        {commentLength &&
-          (commentLength === 0 ? (
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100px',
-              }}
-            >
-              댓글이 없습니다.
-            </div>
-          ) : (
-            commentLength &&
-            comments.map(
-              (data, i) =>
-                i < commentLength && <Comment key={data.id} data={data} />,
-            )
-          ))}
+        {commentLength === 0 ? (
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100px',
+            }}
+          >
+            댓글이 없습니다.
+          </div>
+        ) : (
+          commentLength &&
+          comments.map(
+            (data, i) =>
+              i < commentLength && <Comment key={data.id} data={data} />,
+          )
+        )}
       </CommentWrapper>
 
       <InputWrapper>
