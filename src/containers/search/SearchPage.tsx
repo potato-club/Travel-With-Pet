@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { PhotoCardList, TypoGraphy } from 'src/components';
 import { CustomPagination } from 'src/components/CustomPagination';
 import ListContents from 'src/components/daily/ListContents';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import ListHeader from 'src/components/daily/ListHeader';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { DailyBoardType, InformationBoardType } from 'src/types/board.type';
 import { SearchBoxVer2 } from './components/SearchBoxVer2';
@@ -36,7 +37,7 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
       );
     } else {
       setList(
-        DailyBoard.filter(
+        DailyBoardData.filter(
           item =>
             item.title.includes(inputData) || item.contents.includes(inputData),
         ),
@@ -51,7 +52,7 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
   useEffect(() => {
     setPhotoCardInfoPiece([]);
     setDailyInfoPiece([]);
-    list.map((data, index) => {
+    [...list].reverse().map((data, index) => {
       if (
         index < (activePage - 1) * pieceNumber ||
         index > activePage * pieceNumber - 1
@@ -65,10 +66,6 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
       }
     });
   }, [activePage, list]);
-
-  console.log('list', list);
-  console.log('photoCardInfoPiecelist', photoCardInfoPiece);
-  console.log('dailyInfoPiecelist', dailyInfoPiece);
 
   return (
     <S.Container>
@@ -97,6 +94,7 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
               </>
             ) : (
               <>
+                <ListHeader />
                 <ListContents
                   activePage={activePage}
                   pieceNumber={pieceNumber}

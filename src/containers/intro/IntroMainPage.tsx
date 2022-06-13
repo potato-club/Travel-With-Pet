@@ -10,12 +10,13 @@ import pet4 from 'src/assets/image/pet4.jpg';
 import { ImArrowRight2 } from 'react-icons/im';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRouter } from 'next/router';
 
 export const IntroMainPage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-
+  const router = useRouter();
   return (
     <Wrapper>
       <TitleContent>
@@ -98,7 +99,16 @@ export const IntroMainPage = () => {
             data-aos-easing="ease-in-sine"
             data-aos-anchor-placement="bottom-center"
           >
-            <ArrowBtn onClick={() => alert('로그인 로직임')} />
+            <ArrowBtn
+              onClick={() =>
+                router.push(
+                  {
+                    pathname: `/information`,
+                  },
+                  '/information',
+                )
+              }
+            />
           </AnimationArrow>
         </TypoGraphy>
       </BottomContent>

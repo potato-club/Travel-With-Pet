@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
@@ -9,20 +10,23 @@ export function FixedButton() {
       top: 0,
       behavior: 'smooth',
     });
-  }
+  };
   return (
     <Wrapper>
-      <TypoGraphy type="h3" color={customColor.brownDark} fontWeight="bold">
-        <BasicKnow>
-          기본상식
-          <br />
-          TIP
-        </BasicKnow>
-      </TypoGraphy>
+      <Link href={'/tip'} passHref>
+        <a style={{ textDecoration: 'none' }}>
+          <TypoGraphy type="h3" color={customColor.brownDark} fontWeight="bold">
+            <BasicKnow>
+              기본상식
+              <br />
+              TIP
+            </BasicKnow>
+          </TypoGraphy>
+        </a>
+      </Link>
+
       <TypoGraphy type="body1" color={customColor.white} fontWeight="bold">
-        <TopButton onClick={moveTop}>
-          TOP
-        </TopButton>
+        <TopButton onClick={moveTop}>TOP</TopButton>
       </TypoGraphy>
     </Wrapper>
   );

@@ -18,6 +18,8 @@ type InformationFormProps = {
   setSelectedCategory: Function;
   selectedCity: Obj;
   setSelectedCity: Function;
+  detailCity: string;
+  setDetailCity: Function;
 };
 
 export const InformationForm: React.FC<InformationFormProps> = ({
@@ -25,6 +27,8 @@ export const InformationForm: React.FC<InformationFormProps> = ({
   setSelectedCategory,
   selectedCity,
   setSelectedCity,
+  detailCity,
+  setDetailCity,
 }) => {
   return (
     <>
@@ -58,7 +62,13 @@ export const InformationForm: React.FC<InformationFormProps> = ({
           </Item>
         ))}
       </City>
-      <Input placeholder="세부 지역을 입력하세요" />
+      <Input
+        placeholder="세부 지역을 입력하세요"
+        value={detailCity}
+        onChange={e => {
+          setDetailCity(e.target.value);
+        }}
+      />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TypoGraphy } from 'src/components';
 import styled from 'styled-components';
 import { customColor } from 'src/constants';
@@ -12,7 +12,11 @@ type Props = {
   activePage: number;
 };
 
-export default function ListContents({ dailyData, pieceNumber, activePage }: Props) {
+export default function ListContents({
+  dailyData,
+  pieceNumber,
+  activePage,
+}: Props) {
   // ! imageUrl 은 나중에 contents 에서 분리해야함.
   const formatDate = (date: Date) => {
     const formattedDate = [
@@ -32,7 +36,7 @@ export default function ListContents({ dailyData, pieceNumber, activePage }: Pro
               {/* 우선, 좋아요가 아닌 넘버값으로 사용할 예정 */}
               <HeartWrapper>
                 <TypoGraphy type="body1" fontWeight="bold">
-                  {pieceNumber*(activePage - 1) + index + 1}
+                  {pieceNumber * (activePage - 1) + index + 1}
                   {/* {data.Like} */}
                 </TypoGraphy>
               </HeartWrapper>
@@ -63,7 +67,7 @@ export default function ListContents({ dailyData, pieceNumber, activePage }: Pro
                   fontWeight="bold"
                   color={customColor.brownDark}
                 >
-                  ({data.commentCount})
+                  {data.commentCount !== 0 && `(${data.commentCount})`}
                 </TypoGraphy>
               </TextWrapper>
               <TextWrapper>

@@ -11,7 +11,7 @@ export const MyPosts = () => {
   const [tab, setTab] = useState('정보');
   const photoCardInfoPiece: InformationBoardType[] = [];
   const pieceNumber = 6;
-  InformationBoard.map((data, index) => {
+  [...InformationBoard].reverse().map((data, index) => {
     if (
       index < (activePage - 1) * pieceNumber ||
       index > activePage * pieceNumber - 1
