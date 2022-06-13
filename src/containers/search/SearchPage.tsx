@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { PhotoCardList, TypoGraphy } from 'src/components';
 import { CustomPagination } from 'src/components/CustomPagination';
 import ListContents from 'src/components/daily/ListContents';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 import { InformationBoard } from 'src/dummy/photoCardInfo';
 import { DailyBoardType, InformationBoardType } from 'src/types/board.type';
 import { SearchBoxVer2 } from './components/SearchBoxVer2';
@@ -36,7 +36,7 @@ export const SearchPage = ({ queryData }: { queryData: string }) => {
       );
     } else {
       setList(
-        DailyBoard.filter(
+        DailyBoardData.filter(
           item =>
             item.title.includes(inputData) || item.contents.includes(inputData),
         ),

@@ -1,15 +1,18 @@
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { DailyDetailPage } from 'src/containers/detail/DailyDetailPage';
-import { DailyBoard } from 'src/dummy/dailyInfo';
+import { DailyBoardData } from 'src/dummy/dailyInfo';
 
 const DailyDetail = () => {
   const router = useRouter();
 
-  if (router.query.id && Number(router.query.id) > DailyBoard.length) {
+  if (router.query.id && Number(router.query.id) > DailyBoardData.length) {
     return <div>페이지가 없습니다!</div>;
-  } else if (router.query.id && Number(router.query.id) <= DailyBoard.length) {
-    const detailInfo = DailyBoard.filter(
+  } else if (
+    router.query.id &&
+    Number(router.query.id) <= DailyBoardData.length
+  ) {
+    const detailInfo = DailyBoardData.filter(
       data => data._id === router.query.id,
     )[0];
     // console.log('detailInfo', detailInfo);
