@@ -15,7 +15,6 @@ const DailyDetail = () => {
     const detailInfo = DailyBoardData.filter(
       data => data._id === router.query.id,
     )[0];
-    // console.log('detailInfo', detailInfo);
     return <DailyDetailPage detailInfo={detailInfo} />;
   }
   return <div>404 ERROR</div>;
