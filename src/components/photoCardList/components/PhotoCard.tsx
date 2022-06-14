@@ -47,12 +47,17 @@ export const PhotoCard = ({ data }: Props) => {
     return filterContents;
   };
 
-
   return (
     <Container>
       <Link href={`/information/detail/${_id}`}>
         <a style={{ textDecoration: 'none' }}>
-          <Image width={260} height={180} src={imageUrl()} alt="thumbnail" />
+          <Image
+            width={260}
+            height={180}
+            src={imageUrl()}
+            alt="thumbnail"
+            unoptimized
+          />
           <Info
             Area={city}
             // Like={Like}
