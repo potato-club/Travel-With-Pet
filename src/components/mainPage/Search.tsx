@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { TypoGraphy } from 'src/components';
 import { customColor } from 'src/constants';
 import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
-import MainPageSearchBG from 'src/assets/image/MainPageSearchBG.jpg';
+import searchBG from 'src/assets/image/searchBG.webp';
 import styled from 'styled-components';
 import { Recommend } from './Recommend';
 import { useRef } from 'react';
@@ -46,7 +46,7 @@ export const Search = () => {
   return (
     <Container>
       <Image
-        src={MainPageSearchBG}
+        src={searchBG}
         layout="fill"
         objectFit="fill"
         alt="background"
